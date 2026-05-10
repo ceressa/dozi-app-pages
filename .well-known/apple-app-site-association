@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "KFPCB4C253.com.bardino.dozi.ios",
+        "paths": [
+          "/i/*",
+          "/invite/*"
+        ]
+      }
+    ]
+  }
+}
