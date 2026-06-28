@@ -1,17 +1,15 @@
 ﻿<!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://googleads.g.doubleclick.net https://www.googleadservices.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://*.google-analytics.com https://*.googletagmanager.com https://stats.g.doubleclick.net https://*.cloudfunctions.net https://googleads.g.doubleclick.net https://www.googleadservices.com; form-action 'self' https://*.cloudfunctions.net;">
-    
-    <!-- Google Search Console Verification -->
-    <meta name="google-site-verification" content="mzztl8JoyWXcHoO2kzcXXoqrHAt23iWn4aJE5Zo2bo0">
     
     <!-- Google tag (gtag.js) - Analytics & Ads -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FKE1QTSMWJ"></script>
@@ -20,7 +18,7 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         
-        // Consent Mode v2 - Tüm izinler etkin
+        // Consent Mode v2 - All granted
         gtag('consent', 'default', {
             'ad_storage': 'granted',
             'ad_user_data': 'granted',
@@ -37,67 +35,59 @@
         gtag('config', 'AW-17862936779');
     </script>
     
-    <!-- Page View Tracker -->
-    <script src="js/pageview-tracker.js" defer></script>
-    
-    <meta name="description" content="Dozi - İlaç takibini kolaylaştıran, yapay zeka destekli sağlıklı yaşam dostunuz. Akıllı hatırlatmalar, aile takibi ve kişiselleştirilmiş sağlık desteği.">
-    <meta name="keywords" content="ilaç hatırlatma uygulaması, ilaç takip, sağlık asistanı, aile sağlığı, medication reminder, ilaç alarm, tedavi uyumu, kronik hastalık, yaşlı bakımı, Türkiye ilaç uygulaması">
+    <meta name="description" content="Dozi - AI-powered medication reminder and health companion. You don't have to do this alone. Smart reminders, family tracking, and personalized health support.">
+    <meta name="keywords" content="medication reminder, health assistant, pill tracker, family health, medication adherence, health app, medicine tracker, drug reminder, prescription reminder, elderly care, chronic disease management, AI health companion">
     <meta name="author" content="Bardino Technology">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
+    <meta name="theme-color" content="#40E0D0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
-    <!-- Canonical & Language Alternates -->
-    <link rel="canonical" href="https://med.dozi.app/">
-    <link rel="alternate" hreflang="tr" href="https://med.dozi.app/">
+    <!-- Canonical & Hreflang -->
+    <link rel="canonical" href="https://med.dozi.app/en/">
     <link rel="alternate" hreflang="en" href="https://med.dozi.app/en/">
+    <link rel="alternate" hreflang="tr" href="https://med.dozi.app/">
     <link rel="alternate" hreflang="x-default" href="https://med.dozi.app/">
     
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://med.dozi.app/">
-    <meta property="og:title" content="Dozi - Sağlıklı Yaşam Dostunuz | İlaç Takip Uygulaması">
-    <meta property="og:description" content="Bu işi tek başına yapmak zorunda değilsiniz. Yapay zeka destekli ilaç hatırlatma, aile takibi ve kişiselleştirilmiş sağlık desteği.">
+    <meta property="og:url" content="https://med.dozi.app/en/">
+    <meta property="og:title" content="Dozi - Your Healthy Living Companion | AI-Powered Medication Tracker">
+    <meta property="og:description" content="You don't have to do this alone. AI-powered medication reminders, family tracking, and personalized health support. Free download.">
     <meta property="og:image" content="https://med.dozi.app/dozi_brand.png">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
-    <meta property="og:locale" content="tr_TR">
-    <meta property="og:locale:alternate" content="en_US">
     <meta property="og:site_name" content="Dozi">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="tr_TR">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@Doziapp">
-    <meta name="twitter:title" content="Dozi - Sağlıklı Yaşam Dostunuz">
-    <meta name="twitter:description" content="Bu işi tek başına yapmak zorunda değilsiniz. Yapay zeka destekli ilaç hatırlatma ve aile takibi.">
+    <meta name="twitter:creator" content="@Doziapp">
+    <meta name="twitter:title" content="Dozi - Your Healthy Living Companion">
+    <meta name="twitter:description" content="You don't have to do this alone. AI-powered medication reminders and family tracking.">
     <meta name="twitter:image" content="https://med.dozi.app/dozi_brand.png">
     
-    <!-- Additional SEO -->
-    <meta name="theme-color" content="#40E0D0">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="format-detection" content="telephone=no">
+    <title>Dozi - Medication Reminder & Tracker App | AI-Powered Health Companion</title>
+    <link rel="icon" type="image/png" href="../dozi_brand.png">
+    <link rel="apple-touch-icon" href="../dozi_brand.png">
     
-    <title>Dozi - İlaç Hatırlatma ve Takip Uygulaması | Yapay Zeka Destekli Sağlık Asistanı</title>
-    <link rel="icon" type="image/png" href="dozi_brand.png">
-    <link rel="apple-touch-icon" href="dozi_brand.png">
-    
-    <!-- Structured Data - Organization -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Dozi",
+        "alternateName": "Dozi App",
         "url": "https://med.dozi.app",
         "logo": "https://med.dozi.app/dozi_brand.png",
-        "description": "Yapay zeka destekli ilaç takip uygulaması",
+        "description": "AI-powered medication reminder and health companion",
         "foundingDate": "2024",
-        "founder": {
-            "@type": "Organization",
-            "name": "Bardino Technology"
-        },
         "sameAs": [
             "https://www.instagram.com/doziapp",
-            "https://www.facebook.com/doziappilactakibi",
+            "https://www.facebook.com/doziappilactakibi/",
             "https://www.tiktok.com/@doziapp",
             "https://x.com/Doziapp",
             "https://www.youtube.com/@BardinoTechnology"
@@ -109,32 +99,27 @@
         }
     }
     </script>
-    
-    <!-- Structured Data - Mobile Application -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "MobileApplication",
-        "name": "Dozi - İlaç Takip Uygulaması",
+        "name": "Dozi - Medication Reminder",
         "operatingSystem": "Android",
         "applicationCategory": "HealthApplication",
         "offers": {
             "@type": "Offer",
             "price": "0",
-            "priceCurrency": "TRY"
+            "priceCurrency": "USD"
         },
         "aggregateRating": {
             "@type": "AggregateRating",
             "ratingValue": "4.6",
             "ratingCount": "500"
         },
-        "description": "Yapay zeka destekli akıllı ilaç hatırlatma, aile takibi ve kişiselleştirilmiş sağlık desteği.",
+        "description": "AI-powered medication reminder app with family tracking, smart reminders, and personalized health support.",
         "downloadUrl": "https://play.google.com/store/apps/details?id=com.bardino.dozi",
-        "softwareVersion": "1.0",
-        "author": {
-            "@type": "Organization",
-            "name": "Bardino Technology"
-        }
+        "screenshot": "https://med.dozi.app/images/PlayStore_1.png",
+        "featureList": "Smart Reminders, AI Companion, Family Tracking, Offline Mode, Stock Tracking, Location Reminders"
     }
     </script>
 
@@ -146,42 +131,42 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Dozi ücretsiz mi?",
+                "name": "Is Dozi free?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Evet! Dozi'nin temel özellikleri tamamen ücretsiz. 5 ilaca kadar takip, hatırlatmalar ve istatistikler ücretsiz planda mevcut. Daha fazla özellik için Dozi Ekstra'ya geçebilirsiniz."
+                    "text": "Yes! Dozi's core features are completely free. Track up to 5 medications, reminders, and statistics are available in the free plan. For more features, you can upgrade to Dozi Ekstra."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Verilerim güvende mi?",
+                "name": "Is my data safe?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Kesinlikle. Tüm sağlık verileriniz AES-256 şifreleme ile korunur. KVKK ve GDPR uyumlu altyapımız ile verileriniz sadece sizin kontrolünüzde. Verilerinizi asla üçüncü taraflarla paylaşmıyoruz."
+                    "text": "Absolutely. All your health data is protected with AES-256 encryption. With our GDPR and KVKK compliant infrastructure, your data is only under your control. We never share your data with third parties."
                 }
             },
             {
                 "@type": "Question",
-                "name": "İnternet olmadan çalışır mı?",
+                "name": "Does it work without internet?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Evet! Dozi offline-first mimarisi ile tasarlandı. Hatırlatmalar internet olmadan da çalışır. Bağlantı geldiğinde verileriniz otomatik olarak senkronize olur."
+                    "text": "Yes! Dozi is designed with offline-first architecture. Reminders work without internet. Your data automatically syncs when connection returns."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Badi sistemi nasıl çalışır?",
+                "name": "How does the Badi system work?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Badi, güvendiğiniz kişileri (aile, arkadaş) uygulamaya eklemenizi sağlar. İlacınızı belirlenen sürede almazsanız, badi'lerinize otomatik bildirim gider. Böylece sevdikleriniz sizi takip edebilir."
+                    "text": "Badi lets you add trusted people (family, friends) to the app. If you don't take your medication within the set time, your badis automatically get notified. This way, your loved ones can keep track of you."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Aboneliği iptal edebilir miyim?",
+                "name": "Can I cancel my subscription?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Evet, istediğiniz zaman Google Play üzerinden aboneliğinizi iptal edebilirsiniz. İptal sonrası dönem sonuna kadar Ekstra özelliklerini kullanmaya devam edersiniz."
+                    "text": "Yes, you can cancel your subscription anytime through Google Play. After cancellation, you'll continue to use Ekstra features until the end of your billing period."
                 }
             }
         ]
@@ -438,7 +423,6 @@
         .footer-social a.social-facebook:hover { background: #1877F2; }
         .footer-social a.social-tiktok:hover { background: linear-gradient(135deg, #25F4EE 0%, #FE2C55 50%, #000000 100%); }
         .footer-social a.social-x:hover { background: #000000; border-color: rgba(255,255,255,0.2); }
-        .footer-social a.social-youtube:hover { background: #FF0000; }
         .footer-social a.social-playstore:hover { background: linear-gradient(135deg, #00C853 0%, #00E676 50%, #69F0AE 100%); }
         .footer-playstore { display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; transition: all 0.3s ease; border: 1px solid rgba(255,255,255,0.15); }
         .footer-playstore:hover { background: linear-gradient(135deg, #00C853 0%, #00E676 50%, #69F0AE 100%); color: white; border-color: transparent; transform: translateY(-2px); box-shadow: 0 8px 25px rgba(0,200,83,0.3); }
@@ -556,21 +540,21 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
-                <img src="dozi_brand.png" alt="Dozi - İlaç hatırlatma ve takip uygulaması logosu">
+                <img src="../dozi_brand.png" alt="Dozi - Medication reminder and tracker app logo">
                 <span>Dozi</span>
             </a>
             <ul class="nav-links">
-                <li><a href="#features">Özellikler</a></li>
+                <li><a href="#features">Features</a></li>
                 <li><a href="#ekstra">Dozi Ekstra</a></li>
-                <li><a href="#science">Bilimsel Kanıt</a></li>
-                <li><a href="#pricing">Fiyatlar</a></li>
-                <li><a href="blog/">Blog</a></li>
-                <li><a href="#faq">SSS</a></li>
-                <li><a href="#download" class="nav-cta">İndir</a></li>
+                <li><a href="#science">Science</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="../blog/">Blog</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#download" class="nav-cta">Download</a></li>
                 <li>
                     <div class="lang-switch">
-                        <button class="lang-btn active">TR</button>
-                        <button class="lang-btn" onclick="window.location.href='en/index.html'">EN</button>
+                        <button class="lang-btn" onclick="window.location.href='../index.html'">TR</button>
+                        <button class="lang-btn active">EN</button>
                     </div>
                 </li>
             </ul>
@@ -588,32 +572,32 @@
         </div>
         <div class="hero-container">
             <div class="hero-content">
-                <div class="hero-badge"><span>🇹🇷</span><span>Türkiye'de Geliştirildi</span></div>
-                <h1>İlaçlarınızı Unutma Derdine Son:<br><span class="gradient-text">Akıllı Sağlık Asistanınız</span></h1>
-                <p class="hero-tagline">Bu işi tek başına yapmak zorunda değilsiniz.</p>
-                <p class="hero-description">Yapay zeka destekli hatırlatmalar ve aile takibi ile sevdiklerinizin sağlığını güvence altına alın.</p>
+                <div class="hero-badge"><span>🇹🇷</span><span>Made in Turkey</span></div>
+                <h1>Never Miss a Dose Again:<br><span class="gradient-text">Your Smart Health Companion</span></h1>
+                <p class="hero-tagline">You don't have to do this alone.</p>
+                <p class="hero-description">AI-powered reminders and family tracking to keep your loved ones' health safe and sound.</p>
                 <div class="hero-stats">
-                    <div class="hero-stat"><div class="hero-stat-value">%50</div><div class="hero-stat-label">Tedavi uyumu artışı*</div></div>
-                    <div class="hero-stat"><div class="hero-stat-value">🔒</div><div class="hero-stat-label">KVKK Uyumlu</div></div>
-                    <div class="hero-stat"><div class="hero-stat-value">📴</div><div class="hero-stat-label">Çevrimdışı Çalışır</div></div>
+                    <div class="hero-stat"><div class="hero-stat-value">50%</div><div class="hero-stat-label">Adherence increase*</div></div>
+                    <div class="hero-stat"><div class="hero-stat-value">🔒</div><div class="hero-stat-label">GDPR Compliant</div></div>
+                    <div class="hero-stat"><div class="hero-stat-value">📴</div><div class="hero-stat-label">Works Offline</div></div>
                 </div>
                 <div class="hero-buttons">
-                    <a href="#download" class="btn-primary"><span>📱</span><span>Ücretsiz İndir</span></a>
+                    <a href="#download" class="btn-primary"><span>📱</span><span>Download Free</span></a>
                     <a href="#ekstra" class="btn-secondary"><span>💎</span><span>Dozi Ekstra</span></a>
                 </div>
                 <div class="play-rating">
                     <span class="play-rating-stars">★★★★☆</span>
-                    <span class="play-rating-text"><strong>4.6</strong> · Google Play'de 1.000+ İndirme</span>
+                    <span class="play-rating-text"><strong>4.6</strong> · 1,000+ Downloads on Google Play</span>
                 </div>
             </div>
             <div class="hero-visual">
                 <div class="phone-mockup">
                     <div class="phone-notch"></div>
-                    <div class="phone-screen"><img src="images/PlayStore_1.png" alt="Dozi ilaç hatırlatma uygulaması ana ekranı - ilaç takip listesi ve hatırlatma bildirimleri" loading="lazy" width="256" height="556"></div>
+                    <div class="phone-screen"><img src="../images/PlayStore_1.png" alt="Dozi medication reminder app main screen - pill tracker and smart health notifications" loading="lazy" width="256" height="556"></div>
                 </div>
-                <div class="floating-card floating-card-1"><div class="floating-card-icon">✓</div><div class="floating-card-text">İlaç alındı!</div></div>
-                <div class="floating-card floating-card-2"><div class="floating-card-icon">🔔</div><div class="floating-card-text">Hatırlatma aktif</div></div>
-                <div class="floating-card floating-card-3"><div class="floating-card-icon">👨‍👩‍👧</div><div class="floating-card-text">Aile takibi</div></div>
+                <div class="floating-card floating-card-1"><div class="floating-card-icon">✓</div><div class="floating-card-text">Medication taken!</div></div>
+                <div class="floating-card floating-card-2"><div class="floating-card-icon">🔔</div><div class="floating-card-text">Reminder active</div></div>
+                <div class="floating-card floating-card-3"><div class="floating-card-icon">👨‍👩‍👧</div><div class="floating-card-text">Family tracking</div></div>
             </div>
         </div>
     </section>
@@ -623,43 +607,43 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">💎 Dozi Ekstra</span>
-                <h2>Sadece Özellik Değil,<br><span class="gradient-text">Huzur Satıyoruz</span></h2>
-                <p class="section-desc">Dozi Ekstra, sadece özellik değil, huzur satar.</p>
+                <h2>Not Just Features,<br><span class="gradient-text">We Sell Peace of Mind</span></h2>
+                <p class="section-desc">Dozi Ekstra doesn't just sell features, it sells peace of mind.</p>
             </div>
             <div class="ekstra-grid">
                 <div class="ekstra-card">
                     <div class="ekstra-icon">👨‍👩‍👧</div>
-                    <h3>Aile Güvencesi</h3>
-                    <p>İlaç alındığında herkes rahatlar. Alınmadığında biri haberdar olur. <strong>Sormadan bilmenin huzuru.</strong></p>
+                    <h3>Family Assurance</h3>
+                    <p>When medication is taken, everyone relaxes. When it's missed, someone knows. <strong>The peace of knowing without asking.</strong></p>
                 </div>
                 <div class="ekstra-card">
                     <div class="ekstra-icon">💬</div>
-                    <h3>İlişkiyi Koruyan Sessizlik</h3>
-                    <p>"İlacını içtin mi?" sorusu biter. Denetleme gider, <strong>güven gelir.</strong> İlişkiler için çok güçlü bir değer.</p>
+                    <h3>Relationship-Preserving Silence</h3>
+                    <p>"Did you take your medicine?" question ends. Monitoring goes, <strong>trust comes.</strong> A powerful value for relationships.</p>
                 </div>
                 <div class="ekstra-card">
                     <div class="ekstra-icon">🧠</div>
-                    <h3>Zihinsel Yükten Kurtulma</h3>
-                    <p>"Aldım mı?" düşüncesi biter. Takip kafadan çıkar. <strong>Bu, doğrudan huzur satar.</strong></p>
+                    <h3>Mental Load Relief</h3>
+                    <p>"Did I take it?" thought ends. Tracking leaves your mind. <strong>This directly sells peace.</strong></p>
                 </div>
                 <div class="ekstra-card">
                     <div class="ekstra-icon">📦</div>
-                    <h3>Bitmeyen Kutu Huzuru</h3>
-                    <p>İlaç bitmesi sürpriz olmaz. Panik yok. Koşturma yok. <strong>Günlük hayatta çok gerçek bir değer.</strong></p>
+                    <h3>Never-Empty Box Peace</h3>
+                    <p>Running out of medication is never a surprise. No panic. No rushing. <strong>A very real value in daily life.</strong></p>
                 </div>
                 <div class="ekstra-card">
                     <div class="ekstra-icon">🤫</div>
-                    <h3>Mahremiyet ve Zarafet</h3>
-                    <p>Bildirimler seni ifşa etmez. Sadece sen anlarsın. <strong>Sessiz ama güçlü.</strong></p>
+                    <h3>Privacy and Elegance</h3>
+                    <p>Notifications don't expose you. Only you understand. <strong>Silent but powerful.</strong></p>
                 </div>
                 <div class="ekstra-card">
                     <div class="ekstra-icon">🤝</div>
-                    <h3>Özgür Ama Yalnız Değil</h3>
-                    <p>Kontrol sende kalır. Ama yük tek başına değildir. <strong>Bu denge Dozi Ekstra'yı farklı yapar.</strong></p>
+                    <h3>Free But Not Alone</h3>
+                    <p>Control stays with you. But the burden isn't yours alone. <strong>This balance makes Dozi Ekstra different.</strong></p>
                 </div>
             </div>
 
-            <!-- Scan Showcase: İlaç kutusunu göster, ben ekleyeyim -->
+            <!-- Scan Showcase: Show your med box, I'll add it -->
             <div class="scan-showcase">
                 <div class="scan-showcase-inner">
                     <div class="scan-phone">
@@ -677,25 +661,25 @@
                                 </div>
                                 <div class="scan-status">
                                     <span class="scan-dot"></span>
-                                    <span class="scan-status-text">İlaç tanınıyor...</span>
+                                    <span class="scan-status-text">Recognizing medication...</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="scan-text-content">
-                        <h3>İlaç Kutusunu Göster,<br><span>Dozi Eklesin</span></h3>
-                        <p>Telefonunun kamerasını ilaç kutusuna tut. Yapay zeka ilacı tanısın, dozaj ve kullanım bilgileriyle otomatik eklensin. Tek hareket, sıfır yazım hatası.</p>
+                        <h3>Show Your Med Box,<br><span>Dozi Adds It</span></h3>
+                        <p>Point your phone camera at the medication box. AI recognizes it and automatically adds it with dosage and usage info. One move, zero typos.</p>
                         <ol class="scan-steps">
-                            <li><span class="step-num">1</span> Kamerayı ilaç kutusuna tut</li>
-                            <li><span class="step-num">2</span> Yapay zeka ilacı otomatik tanısın</li>
-                            <li><span class="step-num">3</span> Dozaj ve saat bilgisi hazır</li>
+                            <li><span class="step-num">1</span> Point camera at medication box</li>
+                            <li><span class="step-num">2</span> AI automatically recognizes the drug</li>
+                            <li><span class="step-num">3</span> Dosage and schedule ready to go</li>
                         </ol>
                     </div>
                 </div>
             </div>
 
             <div class="ekstra-cta">
-                <a href="#pricing" class="btn-primary"><span>💎</span><span>Dozi Ekstra'yı Keşfet</span></a>
+                <a href="#pricing" class="btn-primary"><span>💎</span><span>Discover Dozi Ekstra</span></a>
             </div>
         </div>
     </section>
@@ -704,43 +688,43 @@
     <section class="science" id="science">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">📊 Bilimsel Kanıt</span>
-                <h2>Neden İlaç Hatırlatma<br><span class="gradient-text">Bu Kadar Önemli?</span></h2>
-                <p class="section-desc">Dünya Sağlık Örgütü ve akademik araştırmalar, ilaç uyumunun tedavi başarısındaki kritik rolünü ortaya koyuyor.</p>
+                <span class="section-badge">📊 Scientific Evidence</span>
+                <h2>Why Medication Reminders<br><span class="gradient-text">Matter So Much?</span></h2>
+                <p class="section-desc">WHO and academic research reveal the critical role of medication adherence in treatment success.</p>
             </div>
             <div class="science-grid">
                 <div class="science-card">
                     <div class="science-icon">📉</div>
-                    <div class="science-stat"><span class="counter" data-target="50" data-prefix="%" data-suffix="">0</span></div>
-                    <h3>Tedaviye Uyumsuzluk</h3>
-                    <p>Kronik hastalığı olan hastaların yaklaşık yarısı ilaçlarını düzenli almıyor.</p>
-                    <cite>Kaynak: WHO, 2003</cite>
+                    <div class="science-stat"><span class="counter" data-target="50" data-suffix="%">0</span></div>
+                    <h3>Non-Adherence Rate</h3>
+                    <p>About half of patients with chronic conditions don't take their medications regularly.</p>
+                    <cite>Source: WHO, 2003</cite>
                 </div>
                 <div class="science-card highlight">
                     <div class="science-icon"></div>
                     <div class="science-stat"><span class="counter" data-target="40" data-prefix="+" data-suffix="%">0</span></div>
-                    <h3>Uygulama ile İyileşme</h3>
-                    <p>Mobil hatırlatma uygulamaları kronik hastalarda ilaç uyumunu önemli ölçüde artırıyor.</p>
-                    <cite>Kaynak: JMCP Meta-Analiz, 2020</cite>
+                    <h3>App Improvement</h3>
+                    <p>Mobile reminder apps significantly improve medication adherence in chronic patients.</p>
+                    <cite>Source: JMCP Meta-Analysis, 2020</cite>
                 </div>
                 <div class="science-card">
                     <div class="science-icon">💰</div>
                     <div class="science-stat"><span class="counter" data-target="300" data-prefix="$" data-suffix="B">0</span></div>
-                    <h3>Yıllık Maliyet</h3>
-                    <p>İlaç uyumsuzluğu ABD sağlık sistemine yılda 300 milyar dolar ek yük getiriyor.</p>
-                    <cite>Kaynak: NEHI, 2009</cite>
+                    <h3>Annual Cost</h3>
+                    <p>Medication non-adherence costs the US healthcare system $300 billion annually.</p>
+                    <cite>Source: NEHI, 2009</cite>
                 </div>
                 <div class="science-card">
                     <div class="science-icon">📱</div>
                     <div class="science-stat"><span class="counter" data-target="34" data-prefix="+" data-suffix="%">0</span></div>
-                    <h3>Uygulama Etkisi</h3>
-                    <p>Mobil hatırlatma uygulamaları ilaç uyumunu ortalama %34 artırıyor.</p>
-                    <cite>Kaynak: Cochrane Review, 2017</cite>
+                    <h3>App Impact</h3>
+                    <p>Mobile reminder apps improve medication adherence by an average of 34%.</p>
+                    <cite>Source: Cochrane Review, 2017</cite>
                 </div>
             </div>
             <div class="science-quote">
-                <blockquote>"Tedaviye uyum artırılmadan, tıbbi teknolojideki ilerlemeler potansiyellerini gerçekleştiremeyecektir."</blockquote>
-                <cite>— Dünya Sağlık Örgütü (WHO)</cite>
+                <blockquote>"Without improving adherence, advances in medical technology will fail to realize their potential."</blockquote>
+                <cite>— World Health Organization (WHO)</cite>
             </div>
         </div>
     </section>
@@ -749,33 +733,33 @@
     <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">💬 Kullanıcı Hikayeleri</span>
-                <h2>Binlerce Kişi<br><span class="gradient-text">Dozi'ye Güveniyor</span></h2>
-                <p class="section-desc">Gerçek kullanıcılarımızdan, gerçek hikayeler.</p>
+                <span class="section-badge">💬 User Stories</span>
+                <h2>Thousands Trust<br><span class="gradient-text">Dozi Every Day</span></h2>
+                <p class="section-desc">Real stories from real users.</p>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Annemin tansiyon ilaçlarını uzaktan takip edebilmek bana dünyaları verdi. Artık sürekli 'İlacını içtin mi?' diye sormuyorum. Badi sistemi hayat kurtarıcı."</p>
+                    <p class="testimonial-text">"Being able to track my mom's blood pressure medication remotely means the world to me. I no longer have to call and ask 'Did you take your pills?' The Badi system is a lifesaver."</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">A</div>
-                        <div><div class="testimonial-name">Ayşe T.</div><div class="testimonial-role">Hasta yakını, İstanbul</div></div>
+                        <div class="testimonial-avatar">S</div>
+                        <div><div class="testimonial-name">Sarah M.</div><div class="testimonial-role">Caregiver, London</div></div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"Diyabet hastasıyım ve 3 farklı ilaç kullanıyorum. Dozi'den önce sürekli karıştırıyordum. Şimdi stok takibi sayesinde eczaneye bile zamanında gidiyorum."</p>
+                    <p class="testimonial-text">"I have diabetes and take 3 different medications. Before Dozi, I kept mixing them up. Now the stock tracking even reminds me to visit the pharmacy on time."</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">M</div>
-                        <div><div class="testimonial-name">Mehmet K.</div><div class="testimonial-role">Diyabet hastası, Ankara</div></div>
+                        <div class="testimonial-avatar">J</div>
+                        <div><div class="testimonial-name">James R.</div><div class="testimonial-role">Diabetes patient, New York</div></div>
                     </div>
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"İş yoğunluğunda tiroid ilacımı hep unutuyordum. Konum hatırlatma özelliği sayesinde eve geldiğimde otomatik bildirim alıyorum. Basit ama çok etkili."</p>
+                    <p class="testimonial-text">"With my busy schedule, I kept forgetting my thyroid medication. The location-based reminder sends me a notification when I get home. Simple but incredibly effective."</p>
                     <div class="testimonial-author">
-                        <div class="testimonial-avatar">Z</div>
-                        <div><div class="testimonial-name">Zeynep A.</div><div class="testimonial-role">Yazılım mühendisi, İzmir</div></div>
+                        <div class="testimonial-avatar">E</div>
+                        <div><div class="testimonial-name">Emily K.</div><div class="testimonial-role">Software engineer, Berlin</div></div>
                     </div>
                 </div>
             </div>
@@ -786,19 +770,19 @@
     <section class="features" id="features">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">✨ Özellikler</span>
-                <h2>Sağlığınız İçin<br><span class="gradient-text">Her Şey Bir Arada</span></h2>
-                <p class="section-desc">Dozi, ilaç takibini kolaylaştıran ve tedavi uyumunuzu artıran akıllı özelliklerle donatılmış.</p>
+                <span class="section-badge">✨ Features</span>
+                <h2>Everything You Need<br><span class="gradient-text">For Your Health</span></h2>
+                <p class="section-desc">Dozi is equipped with smart features that simplify medication tracking and improve your adherence.</p>
             </div>
             <div class="features-grid">
-                <div class="feature-card"><div class="feature-icon">⏰</div><h3>Akıllı Hatırlatmalar</h3><p>Kişiselleştirilmiş bildirimler ve eskalasyon sistemi ile hiçbir dozu kaçırmayın.</p></div>
-                <div class="feature-card"><div class="feature-icon">🤖</div><h3>Yapay Zeka Dostu</h3><p>Gemini destekli Dozi sorularınızı yanıtlar ve kişisel öneriler sunar.</p></div>
-                <div class="feature-card"><div class="feature-icon">👨‍👩‍👧</div><h3>Badi Sistemi</h3><p>Sevdiklerinizi "badi" olarak ekleyin. İlaç alınmadığında onlara bildirim gider.</p></div>
-                <div class="feature-card"><div class="feature-icon">📊</div><h3>Detaylı İstatistikler</h3><p>Tedavi uyumunuzu grafiklerle takip edin. Streak sistemi ile motivasyonunuzu yüksek tutun.</p></div>
-                <div class="feature-card"><div class="feature-icon">📍</div><h3>Konum Hatırlatma</h3><p>Eve geldiğinizde veya eczaneye yaklaştığınızda otomatik hatırlatma alın.</p></div>
-                <div class="feature-card"><div class="feature-icon">📦</div><h3>Stok Takibi</h3><p>İlaç stoğunuz azaldığında uyarı alın. Eczaneye gitmeden önce neye ihtiyacınız olduğunu bilin.</p></div>
-                <div class="feature-card"><div class="feature-icon">🔒</div><h3>Gizlilik Öncelikli</h3><p>Verileriniz AES-256 ile şifrelenir. KVKK ve GDPR uyumlu.</p></div>
-                <div class="feature-card"><div class="feature-icon">📴</div><h3>Çevrimdışı Çalışır</h3><p>İnternet olmadan da hatırlatmalar çalışır. Bağlantı geldiğinde otomatik senkronize olur.</p></div>
+                <div class="feature-card"><div class="feature-icon">⏰</div><h3>Smart Reminders</h3><p>Never miss a dose with personalized notifications and escalation system.</p></div>
+                <div class="feature-card"><div class="feature-icon">🤖</div><h3>AI Companion</h3><p>Gemini-powered Dozi answers your questions and provides personalized suggestions.</p></div>
+                <div class="feature-card"><div class="feature-icon">👨‍👩‍👧</div><h3>Badi System</h3><p>Add loved ones as "badi". They get notified when medication is missed.</p></div>
+                <div class="feature-card"><div class="feature-icon">📊</div><h3>Detailed Statistics</h3><p>Track your adherence with charts. Stay motivated with the streak system.</p></div>
+                <div class="feature-card"><div class="feature-icon">📍</div><h3>Location Reminders</h3><p>Get automatic reminders when you arrive home or near a pharmacy.</p></div>
+                <div class="feature-card"><div class="feature-icon">📦</div><h3>Stock Tracking</h3><p>Get alerts when your medication is running low. Know what you need before going to the pharmacy.</p></div>
+                <div class="feature-card"><div class="feature-icon">🔒</div><h3>Privacy First</h3><p>Your data is encrypted with AES-256. GDPR and KVKK compliant.</p></div>
+                <div class="feature-card"><div class="feature-icon">📴</div><h3>Works Offline</h3><p>Reminders work without internet. Auto-syncs when connection returns.</p></div>
             </div>
         </div>
     </section>
@@ -807,25 +791,25 @@
     <section class="use-cases" id="use-cases">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">👥 Kimler İçin?</span>
-                <h2>Dozi Kimlere<br><span class="gradient-text">Yardımcı Olur?</span></h2>
-                <p class="section-desc">Her yaştan, her durumdan insanlar için tasarlandı.</p>
+                <span class="section-badge">👥 Who Is It For?</span>
+                <h2>Who Does Dozi<br><span class="gradient-text">Help?</span></h2>
+                <p class="section-desc">Designed for people of all ages and situations.</p>
             </div>
             <div class="use-cases-grid">
                 <div class="use-case-card">
                     <div class="use-case-icon">👴👵</div>
-                    <h3>Yaşlı Ebeveynler</h3>
-                    <p>Anne veya babanızın ilaçlarını uzaktan takip edin. "İlacını içtin mi?" diye sormak zorunda kalmayın. Badi sistemi ile ilaç alınmadığında otomatik bildirim alın.</p>
+                    <h3>Elderly Parents</h3>
+                    <p>Track your parents' medications remotely. No more asking "Did you take your medicine?". Get automatic notifications when medication is missed with the Badi system.</p>
                 </div>
                 <div class="use-case-card">
                     <div class="use-case-icon">💊</div>
-                    <h3>Kronik Hastalar</h3>
-                    <p>Diyabet, tansiyon, tiroid gibi sürekli ilaç kullanımı gerektiren hastalıklarda düzenli takip hayati önem taşır. Dozi hiçbir dozu kaçırmamanızı sağlar.</p>
+                    <h3>Chronic Patients</h3>
+                    <p>For conditions like diabetes, hypertension, thyroid that require regular medication, consistent tracking is vital. Dozi ensures you never miss a dose.</p>
                 </div>
                 <div class="use-case-card">
                     <div class="use-case-icon">🏃</div>
-                    <h3>Yoğun Çalışanlar</h3>
-                    <p>İş hayatının koşuşturmasında ilaç saatlerini unutmak çok kolay. Akıllı hatırlatmalar ve konum bazlı bildirimlerle hiçbir dozu kaçırmayın.</p>
+                    <h3>Busy Professionals</h3>
+                    <p>It's easy to forget medication times in the rush of work life. Never miss a dose with smart reminders and location-based notifications.</p>
                 </div>
             </div>
         </div>
@@ -835,69 +819,69 @@
     <section class="pricing" id="pricing">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">💰 Fiyatlandırma</span>
-                <h2>Basit ve<br><span class="gradient-text">Şeffaf Fiyatlar</span></h2>
-                <p class="section-desc">İhtiyacınıza göre seçin. Gizli ücret yok.</p>
+                <span class="section-badge">💰 Pricing</span>
+                <h2>Simple and<br><span class="gradient-text">Transparent Pricing</span></h2>
+                <p class="section-desc">Choose what fits your needs. No hidden fees.</p>
             </div>
             <div class="pricing-grid">
                 <div class="pricing-card" id="pricing-free">
                     <div class="pricing-icon">🆓</div>
-                    <h3>Ücretsiz</h3>
+                    <h3>Free</h3>
                     <div class="pricing-price">
-                        <span class="pricing-amount" id="price-free">₺0</span>
-                        <span class="pricing-period" id="period-free">/ sonsuza dek</span>
+                        <span class="pricing-amount" id="price-free">$0</span>
+                        <span class="pricing-period" id="period-free">/ forever</span>
                     </div>
                     <ul class="pricing-features">
-                        <li>5 ilaç takibi</li>
-                        <li>Temel hatırlatmalar</li>
-                        <li>İstatistikler</li>
-                        <li>Çevrimdışı çalışma</li>
-                        <li>KVKK uyumlu güvenlik</li>
+                        <li>5 medication tracking</li>
+                        <li>Basic reminders</li>
+                        <li>Statistics</li>
+                        <li>Offline mode</li>
+                        <li>GDPR compliant security</li>
                     </ul>
-                    <a href="#download" class="pricing-btn">Hemen Başla</a>
+                    <a href="#download" class="pricing-btn">Get Started</a>
                 </div>
                 <div class="pricing-card popular" id="pricing-ekstra">
-                    <span class="pricing-badge" id="badge-ekstra">En Popüler</span>
+                    <span class="pricing-badge" id="badge-ekstra">Most Popular</span>
                     <div class="pricing-icon">💎</div>
                     <h3>Dozi Ekstra</h3>
                     <div class="pricing-price">
                         <span class="pricing-amount" id="price-ekstra-monthly">...</span>
-                        <span class="pricing-period">/ ay'a denk gelir</span>
+                        <span class="pricing-period">/ month equivalent</span>
                     </div>
                     <div class="pricing-yearly-note">
-                        <span class="yearly-label">Yıllık abonelik • tek seferde ödenir</span>
-                        <span class="yearly-total">Toplam: <strong id="price-ekstra-yearly">...</strong></span>
+                        <span class="yearly-label">Yearly subscription • billed once</span>
+                        <span class="yearly-total">Total: <strong id="price-ekstra-yearly">...</strong></span>
                     </div>
                     <ul class="pricing-features">
-                        <li>Tüm ilaçlarını tek yerden takip et</li>
-                        <li>Sevdiklerinin ilaç takibini yap</li>
-                        <li>İlaç kutusunu göster, ben ekleyeyim</li>
-                        <li>Kapatmadan geçemeyeceğin alarmlar</li>
-                        <li>Eve gelince hatırlat</li>
-                        <li>İlacın bitmeden haber ver</li>
-                        <li>Sırdaş Modu ile mahremiyetini koru</li>
+                        <li>Track all your meds in one place</li>
+                        <li>Track your loved ones' meds</li>
+                        <li>Show me the box, I'll add it</li>
+                        <li>Alarms you can't dismiss without action</li>
+                        <li>Remind when you get home</li>
+                        <li>Get notified before you run out</li>
+                        <li>Confidant Mode for your privacy</li>
                     </ul>
-                    <a href="#download" class="pricing-btn">Ekstra'ya Geç</a>
+                    <a href="#download" class="pricing-btn">Go Ekstra</a>
                 </div>
                 <div class="pricing-card" id="pricing-family">
                     <div class="pricing-icon">👨‍👩‍👧‍👦</div>
-                    <h3>Aile Planı</h3>
+                    <h3>Family Plan</h3>
                     <div class="pricing-price">
                         <span class="pricing-amount" id="price-family-monthly">...</span>
-                        <span class="pricing-period">/ ay'a denk gelir</span>
+                        <span class="pricing-period">/ month equivalent</span>
                     </div>
                     <div class="pricing-yearly-note">
-                        <span class="yearly-label">Yıllık abonelik • 4 kişi için</span>
-                        <span class="yearly-total">Toplam: <strong id="price-family-yearly">...</strong></span>
+                        <span class="yearly-label">Yearly subscription • for 4 people</span>
+                        <span class="yearly-total">Total: <strong id="price-family-yearly">...</strong></span>
                     </div>
                     <ul class="pricing-features">
-                        <li>4 kişiye kadar Ekstra hesabı</li>
-                        <li>Tüm Ekstra özellikleri dahil</li>
-                        <li>Aile üyelerini ayrı ayrı takip et</li>
-                        <li>Herkes kendi ilaçlarını yönetsin</li>
-                        <li>Öncelikli destek</li>
+                        <li>Up to 4 Ekstra accounts</li>
+                        <li>All Ekstra features included</li>
+                        <li>Track family members separately</li>
+                        <li>Everyone manages their own meds</li>
+                        <li>Priority support</li>
                     </ul>
-                    <a href="#download" class="pricing-btn">Aile Planı Al</a>
+                    <a href="#download" class="pricing-btn">Get Family Plan</a>
                 </div>
             </div>
         </div>
@@ -907,29 +891,29 @@
     <section class="faq" id="faq">
         <div class="container">
             <div class="section-header">
-                <span class="section-badge">❓ SSS</span>
-                <h2>Sıkça Sorulan<br><span class="gradient-text">Sorular</span></h2>
+                <span class="section-badge">❓ FAQ</span>
+                <h2>Frequently Asked<br><span class="gradient-text">Questions</span></h2>
             </div>
             <div class="faq-list">
                 <div class="faq-item">
-                    <button class="faq-question"><span>Dozi ücretsiz mi?</span><span class="faq-icon">+</span></button>
-                    <div class="faq-answer"><p>Evet! Dozi'nin temel özellikleri tamamen ücretsiz. 5 ilaca kadar takip, hatırlatmalar ve istatistikler ücretsiz planda mevcut. Daha fazla özellik için Dozi Ekstra'ya geçebilirsiniz.</p></div>
+                    <button class="faq-question"><span>Is Dozi free?</span><span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Yes! Dozi's core features are completely free. Track up to 5 medications, reminders, and statistics are available in the free plan. For more features, you can upgrade to Dozi Ekstra.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question"><span>Verilerim güvende mi?</span><span class="faq-icon">+</span></button>
-                    <div class="faq-answer"><p>Kesinlikle. Tüm sağlık verileriniz AES-256 şifreleme ile korunur. KVKK ve GDPR uyumlu altyapımız ile verileriniz sadece sizin kontrolünüzde. Verilerinizi asla üçüncü taraflarla paylaşmıyoruz.</p></div>
+                    <button class="faq-question"><span>Is my data safe?</span><span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Absolutely. All your health data is protected with AES-256 encryption. With our GDPR and KVKK compliant infrastructure, your data is only under your control. We never share your data with third parties.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question"><span>İnternet olmadan çalışır mı?</span><span class="faq-icon">+</span></button>
-                    <div class="faq-answer"><p>Evet! Dozi offline-first mimarisi ile tasarlandı. Hatırlatmalar internet olmadan da çalışır. Bağlantı geldiğinde verileriniz otomatik olarak senkronize olur.</p></div>
+                    <button class="faq-question"><span>Does it work without internet?</span><span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Yes! Dozi is designed with offline-first architecture. Reminders work without internet. Your data automatically syncs when connection returns.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question"><span>Badi sistemi nasıl çalışır?</span><span class="faq-icon">+</span></button>
-                    <div class="faq-answer"><p>Badi, güvendiğiniz kişileri (aile, arkadaş) uygulamaya eklemenizi sağlar. İlacınızı belirlenen sürede almazsanız, badi'lerinize otomatik bildirim gider. Böylece sevdikleriniz sizi takip edebilir.</p></div>
+                    <button class="faq-question"><span>How does the Badi system work?</span><span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Badi lets you add trusted people (family, friends) to the app. If you don't take your medication within the set time, your badis automatically get notified. This way, your loved ones can keep track of you.</p></div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question"><span>Aboneliği iptal edebilir miyim?</span><span class="faq-icon">+</span></button>
-                    <div class="faq-answer"><p>Evet, istediğiniz zaman Google Play üzerinden aboneliğinizi iptal edebilirsiniz. İptal sonrası dönem sonuna kadar Ekstra özelliklerini kullanmaya devam edersiniz.</p></div>
+                    <button class="faq-question"><span>Can I cancel my subscription?</span><span class="faq-icon">+</span></button>
+                    <div class="faq-answer"><p>Yes, you can cancel your subscription anytime through Google Play. After cancellation, you'll continue to use Ekstra features until the end of your billing period.</p></div>
                 </div>
             </div>
         </div>
@@ -938,25 +922,25 @@
     <!-- Download Section -->
     <section class="download" id="download">
         <div class="container">
-            <h2>Sağlıklı Yaşam <span class="gradient-text">Dostunuzu</span> İndirin</h2>
-            <p>Sağlığınız emin ellerde. Hemen başlayın.</p>
+            <h2>Download Your Healthy Living <span class="gradient-text">Companion</span></h2>
+            <p>Your health is in safe hands. Get started now.</p>
             <div class="download-buttons">
                 <a href="https://play.google.com/store/apps/details?id=com.bardino.dozi" class="store-btn" target="_blank">
                     <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
-                    <div class="store-btn-text"><span class="store-btn-small">İNDİR</span><span class="store-btn-large">Google Play</span></div>
+                    <div class="store-btn-text"><span class="store-btn-small">GET IT ON</span><span class="store-btn-large">Google Play</span></div>
                 </a>
             </div>
             <div class="play-rating" style="margin-top: 1rem; background: rgba(255,255,255,0.08);">
                 <span class="play-rating-stars">★★★★☆</span>
-                <span class="play-rating-text"><strong>4.6</strong> · Google Play'de 1.000+ İndirme</span>
+                <span class="play-rating-text"><strong>4.6</strong> · 1,000+ Downloads on Google Play</span>
             </div>
             <div class="ios-waitlist">
-                <p class="ios-waitlist-title">🍎 <span>iOS için çıkınca haber ver</span></p>
+                <p class="ios-waitlist-title">🍎 <span>Get notified when iOS launches</span></p>
                 <form class="ios-waitlist-form" id="iosWaitlistForm">
-                    <input type="email" placeholder="E-posta adresiniz" required>
-                    <button type="submit">Beni Bilgilendir</button>
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Notify Me</button>
                 </form>
-                <p class="ios-waitlist-success" id="iosWaitlistSuccess">Teşekkürler! iOS çıktığında size haber vereceğiz.</p>
+                <p class="ios-waitlist-success" id="iosWaitlistSuccess">Thanks! We'll let you know when iOS is ready.</p>
             </div>
         </div>
     </section>
@@ -965,7 +949,7 @@
     <div class="floating-download" id="floatingDownload">
         <a href="https://play.google.com/store/apps/details?id=com.bardino.dozi" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 9.99l-2.302 2.302-8.634-8.634z"/></svg>
-            <span>Ücretsiz İndir</span>
+            <span>Download Free</span>
         </a>
     </div>
 
@@ -974,34 +958,33 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <img src="dozi_brand.png" alt="Dozi - Yapay zeka destekli ilaç hatırlatma uygulaması">
-                    <p>Dozi, ilaç takibini kolaylaştıran ve tedavi uyumunuzu artıran yapay zeka destekli sağlıklı yaşam dostunuzdur. Türkiye'de geliştirildi.</p>
+                    <img src="../dozi_brand.png" alt="Dozi - AI-powered medication reminder app">
+                    <p>Dozi is your AI-powered healthy living companion that simplifies medication tracking and improves your adherence. Made in Turkey.</p>
                 </div>
                 <div class="footer-links">
-                    <h4>Ürün</h4>
+                    <h4>Product</h4>
                     <ul>
-                        <li><a href="#features">Özellikler</a></li>
+                        <li><a href="#features">Features</a></li>
                         <li><a href="#ekstra">Dozi Ekstra</a></li>
-                        <li><a href="#pricing">Fiyatlar</a></li>
-                        <li><a href="blog/">Blog</a></li>
-                <li><a href="#faq">SSS</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="../blog/">Blog</a></li>
+                <li><a href="#faq">FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>Yasal</h4>
+                    <h4>Legal</h4>
                     <ul>
-                        <li><a href="legal/kvkk.html">KVKK Aydınlatma</a></li>
-                        <li><a href="legal/kvkk-basvuru.html">KVKK Başvuru</a></li>
-                        <li><a href="legal/gdpr.html">GDPR Policy</a></li>
-                        <li><a href="legal/gdpr-request.html">GDPR Request</a></li>
+                        <li><a href="../legal/gdpr.html">GDPR Policy</a></li>
+                        <li><a href="../legal/gdpr-request.html">GDPR Request</a></li>
+                        <li><a href="../legal/kvkk.html">KVKK (Turkish)</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
-                    <h4>İletişim</h4>
+                    <h4>Contact</h4>
                     <ul>
                         <li><a href="mailto:info@dozi.app">info@dozi.app</a></li>
-                        </ul>
-                    <h4 style="margin-top: 1.5rem;">Bizi Takip Edin</h4>
+                    </ul>
+                    <h4 style="margin-top: 1.5rem;">Follow Us</h4>
                     <div class="footer-social" style="margin-top: 0.75rem;">
                         <a href="https://www.instagram.com/doziapp" target="_blank" title="Instagram" class="social-instagram">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
@@ -1015,76 +998,18 @@
                         <a href="https://x.com/Doziapp" target="_blank" title="X" class="social-x">
                             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
                         </a>
-                        <a href="https://www.youtube.com/@BardinoTechnology" target="_blank" title="YouTube" class="social-youtube">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-                        </a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p class="footer-copyright">© 2026 Bardino Technology. Tüm hakları saklıdır.</p>
+                <p class="footer-copyright">© 2026 Bardino Technology. All rights reserved.</p>
                 <a href="https://play.google.com/store/apps/details?id=com.bardino.dozi" target="_blank" class="footer-playstore">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 9.99l-2.302 2.302-8.634-8.634z"/></svg>
-                    <span>Google Play'de İndir</span>
+                    <span>Get it on Google Play</span>
                 </a>
             </div>
         </div>
     </footer>
-
-    <!-- Cookie Consent Banner -->
-    <div id="cookieBanner" class="cookie-banner">
-        <div class="cookie-content">
-            <div class="cookie-text">
-                <span class="cookie-icon">🍪</span>
-                <p>Web sitemizde deneyiminizi iyileştirmek için çerezler kullanıyoruz. <a href="/cookie-policy.html">Çerez Politikası</a></p>
-            </div>
-            <div class="cookie-buttons">
-                <button onclick="acceptCookies()" class="cookie-btn accept">Kabul Et</button>
-                <button onclick="rejectCookies()" class="cookie-btn reject">Reddet</button>
-            </div>
-        </div>
-    </div>
-
-    <style>
-        .cookie-banner { position: fixed; bottom: 0; left: 0; right: 0; background: white; box-shadow: 0 -4px 20px rgba(0,0,0,0.15); padding: 1rem 2rem; z-index: 9999; transform: translateY(100%); transition: transform 0.3s ease; }
-        .cookie-banner.show { transform: translateY(0); }
-        .cookie-content { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
-        .cookie-text { display: flex; align-items: center; gap: 1rem; flex: 1; }
-        .cookie-icon { font-size: 2rem; }
-        .cookie-text p { margin: 0; color: var(--text-secondary); font-size: 0.9rem; }
-        .cookie-text a { color: var(--dozi-turquoise); text-decoration: underline; }
-        .cookie-buttons { display: flex; gap: 0.75rem; }
-        .cookie-btn { padding: 0.75rem 1.5rem; border-radius: 50px; font-weight: 600; cursor: pointer; transition: all 0.3s ease; border: none; }
-        .cookie-btn.accept { background: var(--gradient-primary); color: white; }
-        .cookie-btn.reject { background: var(--bg-light); color: var(--text-secondary); }
-        .cookie-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
-        @media (max-width: 768px) { .cookie-content { flex-direction: column; text-align: center; } .cookie-text { flex-direction: column; } }
-    </style>
-
-    <script>
-        // Cookie Consent
-        function checkCookieConsent() {
-            if (!localStorage.getItem('cookie_consent')) {
-                setTimeout(() => document.getElementById('cookieBanner').classList.add('show'), 1500);
-            }
-        }
-        function acceptCookies() {
-            localStorage.setItem('cookie_consent', 'accepted');
-            document.getElementById('cookieBanner').classList.remove('show');
-            // Update Google consent
-            gtag('consent', 'update', {
-                'ad_storage': 'granted',
-                'ad_user_data': 'granted',
-                'ad_personalization': 'granted',
-                'analytics_storage': 'granted'
-            });
-        }
-        function rejectCookies() {
-            localStorage.setItem('cookie_consent', 'rejected');
-            document.getElementById('cookieBanner').classList.remove('show');
-        }
-        checkCookieConsent();
-    </script>
 
     <script>
         const navbar = document.getElementById('navbar');
@@ -1173,7 +1098,7 @@
                     if (target.includes('.')) {
                         counter.textContent = prefix + current.toFixed(1) + suffix;
                     } else {
-                        counter.textContent = prefix + Math.floor(current).toLocaleString('tr-TR') + suffix;
+                        counter.textContent = prefix + Math.floor(current).toLocaleString('en-US') + suffix;
                     }
                     
                     if (progress < 1) {
@@ -1185,27 +1110,25 @@
             });
         }
 
-        // Fiyat parse helper - "₺1.199,99" -> 1199.99
+        // Parse price helper - "$24.99" -> 24.99
         function parsePrice(priceStr) {
             if (!priceStr) return null;
-            // ₺1.199,99 veya ₺1.199 formatını parse et
-            const match = priceStr.match(/₺?([\d.]+),?(\d*)/);
+            const match = priceStr.match(/\$?([\d,]+)\.?(\d*)/);
             if (match) {
-                const intPart = match[1].replace(/\./g, ''); // 1.199 -> 1199
+                const intPart = match[1].replace(/,/g, '');
                 const decPart = match[2] || '0';
                 return parseFloat(intPart + '.' + decPart);
             }
             return null;
         }
 
-        // Aylık eşdeğer hesapla ve formatla
+        // Calculate monthly equivalent and format
         function calculateMonthly(yearlyPrice) {
             const monthly = yearlyPrice / 12;
-            // Türkçe format: ₺99,99
-            return '₺' + monthly.toLocaleString('tr-TR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+            return '$' + monthly.toFixed(2);
         }
 
-        // Fiyatları API'den çek
+        // Load pricing from API
         async function loadPricing() {
             try {
                 const response = await fetch('https://europe-west3-dozi-cd7cc.cloudfunctions.net/getWebsitePricing');
@@ -1214,46 +1137,38 @@
                 if (data.success && data.pricing) {
                     const p = data.pricing;
                     
-                    // Ekstra plan - aylık eşdeğer ve yıllık toplam
-                    const ekstraYearly = parsePrice(p.ekstra.price_tr);
+                    // Ekstra plan - monthly equivalent and yearly total
+                    const ekstraYearly = parsePrice(p.ekstra.price_en);
                     if (ekstraYearly) {
                         document.getElementById('price-ekstra-monthly').textContent = calculateMonthly(ekstraYearly);
-                        document.getElementById('price-ekstra-yearly').textContent = p.ekstra.price_tr;
+                        document.getElementById('price-ekstra-yearly').textContent = p.ekstra.price_en;
                     }
                     
-                    // İndirim varsa badge güncelle
+                    // Update badge if discount
                     if (p.ekstra.discount_percent > 0) {
-                        document.getElementById('badge-ekstra').textContent = '%' + p.ekstra.discount_percent + ' İndirim';
+                        document.getElementById('badge-ekstra').textContent = p.ekstra.discount_percent + '% Off';
                     }
                     
-                    // Trial varsa badge'e ekle
-                    if (p.ekstra.trialDays > 0) {
-                        const badge = document.getElementById('badge-ekstra');
-                        if (badge && badge.textContent === 'En Popüler') {
-                            badge.textContent = p.ekstra.trialDays + ' Gün Ücretsiz Dene';
-                        }
-                    }
-                    
-                    // Aile planı - aylık eşdeğer ve yıllık toplam
-                    const familyYearly = parsePrice(p.family.price_tr);
+                    // Family plan - monthly equivalent and yearly total
+                    const familyYearly = parsePrice(p.family.price_en);
                     if (familyYearly) {
                         document.getElementById('price-family-monthly').textContent = calculateMonthly(familyYearly);
-                        document.getElementById('price-family-yearly').textContent = p.family.price_tr;
+                        document.getElementById('price-family-yearly').textContent = p.family.price_en;
                     }
                     
-                    console.log('✅ Fiyatlar yüklendi:', p.ekstra.price_tr, p.family.price_tr);
+                    console.log('✅ Pricing loaded');
                 }
             } catch (error) {
-                console.log('⚠️ Fiyat API hatası, varsayılan fiyatlar kullanılıyor:', error);
-                // Fallback değerler (güncel Play Console fiyatları)
-                document.getElementById('price-ekstra-monthly').textContent = '₺150';
-                document.getElementById('price-ekstra-yearly').textContent = '₺1.799,99';
-                document.getElementById('price-family-monthly').textContent = '₺438';
-                document.getElementById('price-family-yearly').textContent = '₺5.250,00';
+                console.log('⚠️ Pricing API error, using default prices');
+                // Fallback values
+                document.getElementById('price-ekstra-monthly').textContent = '$2.08';
+                document.getElementById('price-ekstra-yearly').textContent = '$24.99';
+                document.getElementById('price-family-monthly').textContent = '$4.17';
+                document.getElementById('price-family-yearly').textContent = '$49.99';
             }
         }
         
-        // Sayfa yüklendiğinde fiyatları çek
+        // Load pricing on page load
         loadPricing();
     </script>
     <script>
@@ -1264,12 +1179,12 @@
             var btn = this.querySelector('button');
             if (email) {
                 btn.disabled = true;
-                btn.textContent = 'Gönderiliyor...';
+                btn.textContent = 'Sending...';
                 try {
                     await fetch('https://europe-west3-dozi-cd7cc.cloudfunctions.net/iosWaitlistSignup', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify({ email: email, lang: 'tr' })
+                        body: JSON.stringify({ email: email, lang: 'en' })
                     });
                 } catch (err) { /* fail silently, still show success */ }
                 gtag('event', 'ios_waitlist_signup', { 'event_category': 'engagement', 'event_label': email });
