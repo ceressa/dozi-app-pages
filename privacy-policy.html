@@ -143,7 +143,7 @@
     <!-- Main Content -->
     <header>
         <h1>Dozi - Gizlilik Politikası</h1>
-        <p class="update-date">Son Güncelleme: 18 Kasım 2025</p>
+        <p class="update-date">Son Güncelleme: 30 Haziran 2026</p>
     </header>
 
     <main>
@@ -173,6 +173,33 @@
                 <li>Uygulama kullanım istatistikleri.</li>
                 <li>Performans ve hata raporları (çökme esnasında anonimleştirilmiş teknik veriler).</li>
             </ul>
+
+            <h3>1.3 Konum Verileri (Premium Özellik)</h3>
+            <p>Dozi, <strong>konum bazlı ilaç hatırlatmaları</strong> sağlamak için konum verilerinize erişir, bunları
+                toplar ve kullanır. Konum özellikleri yalnızca Premium aboneler için sunulur ve yalnızca bir ilaç için
+                konum bazlı hatırlatmayı etkinleştirip uygulamaya konum izni verdiğinizde devreye girer.</p>
+            <ul>
+                <li><strong>Hassas konum (GPS):</strong> Cihazınızın anlık enlem/boylam bilgisine, coğrafi sınır
+                    (geofence) tetiklemeleri için Android Konum Hizmetleri üzerinden, uygulama ön planda veya arka
+                    plandayken erişilir.</li>
+                <li><strong>Yaklaşık konum:</strong> Pil tasarrufu amacıyla daha düşük hassasiyetli konum bilgisi
+                    kullanılabilir.</li>
+                <li><strong>Kaydedilen konumlar:</strong> Belirlediğiniz yerler (ev, iş, eczane vb.) ve koordinatları,
+                    hatırlatma tetikleme noktaları olarak kullanılır.</li>
+                <li><strong>Coğrafi sınır olayları:</strong> Kaydedilen bir yere vardığınızda veya oradan ayrıldığınızda
+                    oluşan giriş/çıkış olayları, konum bazlı hatırlatmaları tetiklemek için Android Geofencing API ile
+                    işlenir.</li>
+            </ul>
+            <p><strong>Arka planda konum:</strong> Güvenilir konum bazlı hatırlatma sunabilmek için konumunuza arka
+                planda erişebiliriz. Bunun için sizden açıkça "Her zaman izin ver" yetkisi istenir ve konum yalnızca bu
+                özelliği siz etkinleştirdiğinizde kullanılır.</p>
+            <p><strong>Saklama ve paylaşım:</strong> Konum verileri öncelikli olarak cihazınızda işlenir. Kaydettiğiniz
+                konum adları ve koordinatları, cihazlar arası senkronizasyon için şifreli biçimde Firebase üzerinde
+                saklanır. Konum verilerinizi reklam veya pazarlama amacıyla üçüncü taraflarla
+                <strong>paylaşmıyoruz</strong> ve <strong>satmıyoruz</strong>.</p>
+            <p><strong>İzni kaldırma:</strong> Konum iznini istediğiniz zaman cihaz Ayarlar &gt; Uygulamalar &gt; Dozi
+                &gt; İzinler &gt; Konum üzerinden geri alabilir veya uygulama ayarlarından konum bazlı hatırlatmaları
+                kapatabilirsiniz.</p>
         </section>
 
         <section>
@@ -180,6 +207,7 @@
             <p>Kişisel verileriniz KVKK madde 5 ve GDPR madde 6 çerçevesinde aşağıdaki amaçlarla işlenir:</p>
             <ul>
                 <li>İlaç hatırlatma bildirimlerinin sağlanması.</li>
+                <li>Konum bazlı ilaç hatırlatmalarının (coğrafi sınır/geofence) sağlanması.</li>
                 <li>Uygulama deneyiminin kişiselleştirilmesi ve geliştirilmesi.</li>
                 <li>Premium kullanıcılar için bulut yedekleme ve cihazlar arası senkronizasyon.</li>
                 <li>Premium aile yönetimi ve bildirim özelliklerinin sunulması.</li>
