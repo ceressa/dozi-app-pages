@@ -12,7 +12,7 @@
     );
     const pageImage = encodeURIComponent(
         document.querySelector('meta[property="og:image"]')?.content || 
-        'https://med.dozi.app/dozi_brand.png'
+        'https://med.bardino.app/dozi_brand.png'
     );
     
     // Google Play link

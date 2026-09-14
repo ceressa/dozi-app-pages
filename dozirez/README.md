@@ -3,7 +3,7 @@
 Modern, kullanıcı dostu eczane rezervasyon yönetim sistemi.
 
 ## 📍 URL
-**Production:** https://dozi.app/dozirez/
+**Production:** https://med.bardino.app/dozirez/
 
 ## 🎯 Özellikler
 
@@ -138,7 +138,7 @@ PENDING → CONFIRMED → READY → COMPLETED
 - XSS koruması
 
 ## 🚀 Deployment
-1. Dosyaları `dozi.app/dozirez/` klasörüne yükle
+1. Dosyaları `med.bardino.app/dozirez/` klasörüne yükle
 2. Firebase Functions'ları deploy et
 3. Firestore rules'ı güncelle
 4. Test et
@@ -150,11 +150,11 @@ Development için demo data kullanılıyor:
 - Tüm status tipleri
 
 ## 🔗 Bağlantılar
-- **Ana Sayfa:** https://dozi.app/
-- **Eczacılara:** https://dozi.app/eczacilara.html
-- **DoziRez:** https://dozi.app/dozirez/
-- **Login:** https://dozi.app/dozirez/login.html
-- **Dashboard:** https://dozi.app/dozirez/dashboard.html
+- **Ana Sayfa:** https://med.bardino.app/
+- **Eczacılara:** https://med.bardino.app/eczacilara.html
+- **DoziRez:** https://med.bardino.app/dozirez/
+- **Login:** https://med.bardino.app/dozirez/login.html
+- **Dashboard:** https://med.bardino.app/dozirez/dashboard.html
 
 ## 📝 TODO
 - [ ] İstatistikler sayfası
@@ -173,5 +173,5 @@ Development için demo data kullanılıyor:
 - Ayarlar ve İstatistikler sayfaları boş
 
 ## 📞 İletişim
-- **Email:** info@dozi.app
-- **Website:** https://dozi.app
+- **Email:** info@bardino.app
+- **Website:** https://med.bardino.app

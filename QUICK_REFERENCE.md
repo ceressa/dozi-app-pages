@@ -12,7 +12,7 @@
 <RECAPTCHA_SECRET_KEY>
 ```
 
-**Domains:** `dozi.app`, `med.dozi.app`
+**Domains:** `dozi.app`, `med.bardino.app`
 
 ---
 
@@ -72,9 +72,9 @@ git push origin main
 
 | Form | URL |
 |------|-----|
-| Account Deletion (TR) | https://med.dozi.app/account-deletion-form.html |
-| KVKK Request (TR) | https://med.dozi.app/legal/kvkk-basvuru.html |
-| GDPR Request (EN) | https://med.dozi.app/legal/gdpr-request.html |
+| Account Deletion (TR) | https://med.bardino.app/account-deletion-form.html |
+| KVKK Request (TR) | https://med.bardino.app/legal/kvkk-basvuru.html |
+| GDPR Request (EN) | https://med.bardino.app/legal/gdpr-request.html |
 
 ---
 
@@ -82,8 +82,8 @@ git push origin main
 
 | Type | Recipient |
 |------|-----------|
-| Account Deletion Admin | `info@dozi.app` |
-| KVKK/GDPR Admin | `KVKK_EMAIL` secret (default: `info@dozi.app`) |
+| Account Deletion Admin | `info@bardino.app` |
+| KVKK/GDPR Admin | `KVKK_EMAIL` secret (default: `info@bardino.app`) |
 | User Confirmation | User's email from form |
 
 ---
@@ -149,7 +149,7 @@ firebase functions:log --only submitAccountDeletionRequest
 - Wait 1 hour or manually delete rate limit doc
 
 ### CORS Errors
-- Verify request from `dozi.app` or `med.dozi.app`
+- Verify request from `dozi.app` or `med.bardino.app`
 - Check browser console for CORS errors
 - Ensure CORS array in function config is correct
 

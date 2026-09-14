@@ -17,9 +17,9 @@
 </p>
 
 <p align="center">
-  <a href="https://dozi.app">🌐 Live Website</a> • 
-  <a href="https://dozi.app/en">🇬🇧 English</a> • 
-  <a href="https://dozi.app/blog">📝 Blog</a>
+  <a href="https://med.bardino.app">🌐 Live Website</a> • 
+  <a href="https://med.bardino.app/en">🇬🇧 English</a> • 
+  <a href="https://med.bardino.app/blog">📝 Blog</a>
 </p>
 
 ---
@@ -36,8 +36,8 @@ Official marketing website for **Dozi**, the AI-powered medication reminder app.
 
 | Language | URL | Status |
 |----------|-----|--------|
-| **Turkish** (Primary) | `https://dozi.app` | ✅ Live |
-| **English** | `https://dozi.app/en` | ✅ Live |
+| **Turkish** (Primary) | `https://med.bardino.app` | ✅ Live |
+| **English** | `https://med.bardino.app/en` | ✅ Live |
 
 ### 📄 Pages
 
@@ -55,7 +55,7 @@ Official marketing website for **Dozi**, the AI-powered medication reminder app.
 
 ### 🎯 Web Dashboard Features
 
-**URL**: `https://dozi.app/dozi/dashboard.html`
+**URL**: `https://med.bardino.app/dozi/dashboard.html`
 
 The web dashboard provides users with a comprehensive view of their medication tracking:
 
@@ -90,7 +90,7 @@ The web dashboard provides users with a comprehensive view of their medication t
 
 - **Static Site**: Pure HTML/CSS/JavaScript (no build process)
 - **GitHub Pages**: Hosted on GitHub Pages with custom domain
-- **Custom Domain**: `dozi.app` with CNAME configuration
+- **Custom Domain**: `med.bardino.app` with CNAME configuration
 - **SSL/HTTPS**: Automatic HTTPS via GitHub Pages
 - **SEO Optimized**: Meta tags, Open Graph, Twitter Cards
 - **Responsive Design**: Mobile-first responsive layout
@@ -206,10 +206,10 @@ dozi-website-temp/
 1. **Repository Settings**
    - Go to repository Settings → Pages
    - Source: Deploy from `main` branch
-   - Custom domain: `dozi.app`
+   - Custom domain: `med.bardino.app`
 
 2. **DNS Configuration**
-   - Add CNAME record: `dozi.app` → `ceressa.github.io`
+   - Add CNAME record: `med.bardino.app` → `ceressa.github.io`
    - Add A records for apex domain:
      ```
      185.199.108.153
@@ -219,7 +219,7 @@ dozi-website-temp/
      ```
 
 3. **CNAME File**
-   - Create `CNAME` file in root with content: `dozi.app`
+   - Create `CNAME` file in root with content: `med.bardino.app`
 
 4. **Deploy**
    ```bash
@@ -230,7 +230,7 @@ dozi-website-temp/
 
 5. **Verify**
    - Wait 1-2 minutes for GitHub Pages to rebuild
-   - Visit `https://dozi.app` to verify
+   - Visit `https://med.bardino.app` to verify
 
 See `DEPLOYMENT_CHECKLIST.md` for detailed deployment steps.
 
@@ -291,19 +291,19 @@ View analytics at `dozi-admin-panel` → Website Analytics page
 
 ## 🔗 Important Links
 
-- **Live Website**: [dozi.app](https://dozi.app)
-- **English Site**: [dozi.app/en](https://dozi.app/en)
-- **Blog**: [dozi.app/blog](https://dozi.app/blog)
-- **Download**: [dozi.app/app/download.html](https://dozi.app/app/download.html)
+- **Live Website**: [med.bardino.app](https://med.bardino.app)
+- **English Site**: [med.bardino.app/en](https://med.bardino.app/en)
+- **Blog**: [med.bardino.app/blog](https://med.bardino.app/blog)
+- **Download**: [med.bardino.app/app/download.html](https://med.bardino.app/app/download.html)
 - **Google Play**: [Download Dozi](https://play.google.com/store/apps/details?id=com.bardino.dozi)
 
 ---
 
 ## 📞 Contact
 
-- **Website:** [dozi.app](https://dozi.app)
-- **Email:** [info@dozi.app](mailto:info@dozi.app)
-- **Support:** [support@dozi.app](mailto:support@dozi.app)
+- **Website:** [med.bardino.app](https://med.bardino.app)
+- **Email:** [info@bardino.app](mailto:info@bardino.app)
+- **Support:** [info@bardino.app](mailto:info@bardino.app)
 
 ---
 

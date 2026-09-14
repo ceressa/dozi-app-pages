@@ -104,8 +104,8 @@ Security headers have been added to:
 ## 🔍 Testing Security Headers
 
 You can test the security headers using:
-- [Security Headers](https://securityheaders.com/?q=https://med.dozi.app)
-- [Mozilla Observatory](https://observatory.mozilla.org/analyze/med.dozi.app)
+- [Security Headers](https://securityheaders.com/?q=https://med.bardino.app)
+- [Mozilla Observatory](https://observatory.mozilla.org/analyze/med.bardino.app)
 - Browser DevTools → Network tab → Response Headers
 
 ## 📝 Notes
@@ -127,7 +127,7 @@ Before deploying changes:
 ## 📞 Security Contact
 
 For security concerns or vulnerability reports:
-- Email: info@dozi.app
+- Email: info@bardino.app
 - Response time: 24-48 hours
 
 ---

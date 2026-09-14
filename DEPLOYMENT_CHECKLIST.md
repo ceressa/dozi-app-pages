@@ -43,7 +43,7 @@ firebase functions:secrets:set SMTP_PASS
 # Enter your email password or app-specific password
 
 firebase functions:secrets:set KVKK_EMAIL
-# Enter: info@dozi.app (or dedicated KVKK email)
+# Enter: info@bardino.app (or dedicated KVKK email)
 ```
 
 ### Step 2: Deploy Functions
@@ -103,7 +103,7 @@ git push origin main
 ## ✅ Post-Deployment Testing
 
 ### Test Account Deletion Form
-1. Go to: https://med.dozi.app/account-deletion-form.html
+1. Go to: https://med.bardino.app/account-deletion-form.html
 2. Fill form with test data
 3. Submit and verify:
    - ✅ reCAPTCHA executes
@@ -113,7 +113,7 @@ git push origin main
    - ✅ Firestore document created in `account_deletion_requests`
 
 ### Test KVKK Form (Turkish)
-1. Go to: https://med.dozi.app/legal/kvkk-basvuru.html
+1. Go to: https://med.bardino.app/legal/kvkk-basvuru.html
 2. Test each request type:
    - Veri Erişim Talebi
    - Veri Düzeltme Talebi
@@ -124,7 +124,7 @@ git push origin main
 4. Check Firestore: `data_requests` collection
 
 ### Test GDPR Form (English)
-1. Go to: https://med.dozi.app/legal/gdpr-request.html
+1. Go to: https://med.bardino.app/legal/gdpr-request.html
 2. Test each request type
 3. Verify same checks as above
 

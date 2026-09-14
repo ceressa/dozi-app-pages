@@ -86,7 +86,7 @@ firebase deploy --only hosting
 ```
 
 ### 3. Verify Deployment
-1. Open https://med.dozi.app/dozi/dashboard.html
+1. Open https://med.bardino.app/dozi/dashboard.html
 2. Login with test account
 3. Go to "Badilerim" tab
 4. Click "Hatırlat" button on a badi card

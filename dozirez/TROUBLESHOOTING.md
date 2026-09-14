@@ -5,7 +5,7 @@
 ### Test Adımları
 
 #### 1. Test Sayfasını Kullan
-1. Şu sayfayı aç: https://dozi.app/dozirez/test-login.html
+1. Şu sayfayı aç: https://med.bardino.app/dozirez/test-login.html
 2. "Test 1: API Endpoint Erişimi" butonuna tıkla
    - ✅ Başarılı: Endpoint erişilebilir
    - ❌ Hata: API endpoint'e erişim sorunu var
@@ -14,7 +14,7 @@
    - ❌ Hata: Şifre veya API sorunu var
 
 #### 2. Browser Console Kontrolü
-1. Login sayfasını aç: https://dozi.app/dozirez/login.html
+1. Login sayfasını aç: https://med.bardino.app/dozirez/login.html
 2. F12 tuşuna bas (Developer Tools)
 3. "Console" sekmesine git
 4. Giriş yapmayı dene
@@ -130,12 +130,12 @@ Invoke-RestMethod -Uri "https://us-central1-dozi-cd7cc.cloudfunctions.net/pharma
    ```
 
 4. **Destek:**
-   - Email: info@dozi.app
+   - Email: info@bardino.app
    - Hata mesajını ve console loglarını ekle
 
 ## 🎯 Hızlı Çözüm Checklist
 
-- [ ] Test sayfasını dene: https://dozi.app/dozirez/test-login.html
+- [ ] Test sayfasını dene: https://med.bardino.app/dozirez/test-login.html
 - [ ] Browser cache'i temizle (Ctrl + Shift + R)
 - [ ] Incognito mode'da dene
 - [ ] Console'da hata var mı kontrol et (F12)
@@ -147,6 +147,6 @@ Invoke-RestMethod -Uri "https://us-central1-dozi-cd7cc.cloudfunctions.net/pharma
 ## 📞 İletişim
 
 Sorun devam ederse:
-- Email: info@dozi.app
+- Email: info@bardino.app
 - Konu: "DoziRez Login Sorunu"
 - Ekle: Console hataları, Network tab screenshot

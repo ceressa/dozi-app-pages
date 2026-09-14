@@ -192,7 +192,7 @@ const frequencyMap = {
 
 ## 📞 Next Steps
 
-1. ✅ Test dashboard at dozi.app/app/dashboard
+1. ✅ Test dashboard at med.bardino.app/app/dashboard
 2. ✅ Verify all medicines showing
 3. ✅ Test postpone functionality
 4. ✅ Confirm color scheme improvements

@@ -1,5 +1,5 @@
 # Dozi Website - robots.txt
-# https://med.dozi.app/robots.txt
+# https://med.bardino.app/robots.txt
 
 # Allow all bots to crawl everything
 User-agent: *
@@ -10,7 +10,7 @@ Allow: /
 # Disallow: /private/
 
 # Sitemap location
-Sitemap: https://med.dozi.app/sitemap.xml
+Sitemap: https://med.bardino.app/sitemap.xml
 
 # Crawl-delay for polite crawling (optional)
 # Crawl-delay: 1

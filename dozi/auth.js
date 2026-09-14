@@ -1,4 +1,4 @@
-// Firebase Configuration - dozi.app için
+// Firebase Configuration - med.bardino.app için
 const firebaseConfig = {
     apiKey: "AIzaSyBqxped2ZQS7uJHCX-MmCq0Nnj5Vtudloo",
     authDomain: "dozi-cd7cc.firebaseapp.com",

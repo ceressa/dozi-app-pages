@@ -77,7 +77,7 @@ Added comprehensive security headers to all website pages:
 
 **Registered Domains:**
 - `dozi.app`
-- `med.dozi.app`
+- `med.bardino.app`
 
 **Frontend Integration:**
 - Invisible reCAPTCHA v3 (no user interaction)
@@ -101,7 +101,7 @@ Added comprehensive security headers to all website pages:
 ### 4. Form Pages Created
 
 #### Account Deletion Form (Turkish)
-**URL:** `https://med.dozi.app/account-deletion-form.html`  
+**URL:** `https://med.bardino.app/account-deletion-form.html`  
 **Fields:**
 - Ad Soyad (Name)
 - Email
@@ -117,7 +117,7 @@ Added comprehensive security headers to all website pages:
 - 7-day processing timeline
 
 #### KVKK Request Form (Turkish)
-**URL:** `https://med.dozi.app/legal/kvkk-basvuru.html`  
+**URL:** `https://med.bardino.app/legal/kvkk-basvuru.html`  
 **Fields:**
 - Talep Tipi (5 options)
 - Ad Soyad
@@ -133,7 +133,7 @@ Added comprehensive security headers to all website pages:
 - KVKK compliance notice
 
 #### GDPR Request Form (English)
-**URL:** `https://med.dozi.app/legal/gdpr-request.html`  
+**URL:** `https://med.bardino.app/legal/gdpr-request.html`  
 **Fields:**
 - Request Type (5 options)
 - Full Name
@@ -160,7 +160,7 @@ SMTP_HOST=<your-smtp-host>
 SMTP_PORT=587
 SMTP_USER=<your-email>
 SMTP_PASS=<your-email-password>
-KVKK_EMAIL=info@dozi.app
+KVKK_EMAIL=info@bardino.app
 ```
 
 **Set via:**

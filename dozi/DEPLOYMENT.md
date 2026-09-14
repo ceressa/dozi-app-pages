@@ -50,11 +50,11 @@ git push -u origin main
 
 Site URL: `https://YOUR_USERNAME.github.io/dozi-website/`
 
-### 5. Custom Domain (dozi.app)
+### 5. Custom Domain (med.bardino.app)
 
 #### GitHub Pages Ayarları
 1. Repository Settings → Pages → Custom domain
-2. `dozi.app` yaz ve Save
+2. `med.bardino.app` yaz ve Save
 
 #### DNS Ayarları (Domain Provider)
 ```
@@ -71,7 +71,7 @@ www  →  YOUR_USERNAME.github.io
 #### CNAME Dosyası
 `dozi-website-temp/CNAME` dosyası oluştur:
 ```
-dozi.app
+med.bardino.app
 ```
 
 ### 6. HTTPS Aktifleştir
@@ -120,7 +120,7 @@ service cloud.firestore {
 Google Sign-In aktif olmalı:
 1. Firebase Console → Authentication → Sign-in method
 2. Google → Enable
-3. Authorized domains: `dozi.app`, `YOUR_USERNAME.github.io`
+3. Authorized domains: `med.bardino.app`, `YOUR_USERNAME.github.io`
 
 ## 📁 Dosya Yapısı (GitHub)
 
@@ -161,7 +161,7 @@ http://localhost:8000/dozi/
 https://YOUR_USERNAME.github.io/dozi-website/dozi/
 
 # Custom domain
-https://dozi.app/dozi/
+https://med.bardino.app/dozi/
 ```
 
 ## 🔄 Güncelleme

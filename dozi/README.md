@@ -8,7 +8,7 @@ Modern, güvenli ve kullanıcı dostu web tabanlı ilaç takip dashboard'u.
 - **Backend**: Firebase Functions (Serverless)
 - **Auth**: Firebase Authentication (Google Sign-In)
 - **Database**: Firestore (via Functions)
-- **Hosting**: GitHub Pages + Custom Domain (dozi.app)
+- **Hosting**: GitHub Pages + Custom Domain (med.bardino.app)
 
 ## 🚀 Deployment
 
@@ -172,8 +172,8 @@ Frontend (Dashboard)
 
 ## 📞 Destek
 
-- Website: https://dozi.app
-- Email: support@dozi.app
+- Website: https://med.bardino.app
+- Email: info@bardino.app
 - GitHub: https://github.com/YOUR_USERNAME/dozi-website
 
 ## 📄 Lisans

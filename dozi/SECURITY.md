@@ -393,7 +393,7 @@ await logUserActivity('WEB_LOGIN', { email: user.email });
 ## 📞 Güvenlik Sorunları
 
 Güvenlik açığı bulursanız:
-- Email: security@dozi.app
+- Email: info@bardino.app
 - Responsible disclosure policy
 - Bug bounty program (yakında)
 

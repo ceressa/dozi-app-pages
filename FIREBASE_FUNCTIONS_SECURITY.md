@@ -18,7 +18,7 @@ All public endpoints have IP-based rate limiting:
 
 ### 2. CORS Protection
 ```typescript
-cors: ["https://med.dozi.app", "https://dozi.app"]
+cors: ["https://med.bardino.app", "https://dozi.app"]
 ```
 - Only allows requests from official domain
 - Blocks cross-origin attacks
@@ -46,7 +46,7 @@ All endpoints validate:
 
 ### 5. Email Notifications
 **Admin Notifications:**
-- Immediate email to `info@dozi.app` or `KVKK_EMAIL`
+- Immediate email to `info@bardino.app` or `KVKK_EMAIL`
 - Includes request details, IP, timestamp
 - Direct Firestore link for quick access
 
@@ -57,7 +57,7 @@ All endpoints validate:
 
 **Email Deliverability (Anti-Spam):**
 - ✅ Plain text + HTML versions (dual format)
-- ✅ Reply-To header (`info@dozi.app`)
+- ✅ Reply-To header (`info@bardino.app`)
 - ✅ Custom headers (`X-Entity-Ref-ID`, `X-Mailer`)
 - ✅ Professional formatting (no spam triggers)
 - ✅ Message ID logging for tracking
@@ -66,7 +66,7 @@ All endpoints validate:
 ```typescript
 await transporter.sendMail({
   from: '"Dozi" <noreply@...>',
-  replyTo: "info@dozi.app",        // ✅ Reply address
+  replyTo: "info@bardino.app",        // ✅ Reply address
   to: email,
   subject: "...",
   text: plainTextContent,          // ✅ Plain text version
@@ -146,7 +146,7 @@ All sensitive data stored in Firebase Secret Manager:
 
 **Registered Domains:**
 - `dozi.app`
-- `med.dozi.app`
+- `med.bardino.app`
 
 ### Frontend Integration
 ✅ All forms include reCAPTCHA v3:
@@ -240,7 +240,7 @@ firebase functions:log --follow
 
 ## 📞 Security Contacts
 
-- **Security Issues:** info@dozi.app
+- **Security Issues:** info@bardino.app
 - **KVKK Compliance:** (KVKK_EMAIL secret)
 - **Firebase Support:** Firebase Console
 
