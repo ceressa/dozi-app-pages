@@ -33,7 +33,7 @@
         try {
             if (referrer !== 'direct') {
                 var h = new URL(referrer).hostname;
-                if (h && (h.indexOf('bardino.app') !== -1 || h.indexOf('dozi.app') !== -1)) referrer = 'direct';
+                if (h && h.indexOf('bardino.app') !== -1) referrer = 'direct';
                 else referrer = h || 'direct';
             }
         } catch(e) { referrer = 'direct'; }
