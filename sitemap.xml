@@ -40,14 +40,6 @@
         <priority>0.8</priority>
     </url>
 
-    <!-- Eczacılara -->
-    <url>
-        <loc>https://med.bardino.app/eczacilara.html</loc>
-        <lastmod>2025-12-08</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
     <!-- Blog Ana Sayfaları / Blog Indexes -->
     <url>
         <loc>https://med.bardino.app/blog/</loc>
