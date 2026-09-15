@@ -173,7 +173,7 @@ Frontend (Dashboard)
 ## 📞 Destek
 
 - Website: https://med.bardino.app
-- Email: info@bardino.app
+- Email: support@bardino.app
 - GitHub: https://github.com/YOUR_USERNAME/dozi-website
 
 ## 📄 Lisans

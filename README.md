@@ -303,7 +303,7 @@ View analytics at `dozi-admin-panel` → Website Analytics page
 
 - **Website:** [med.bardino.app](https://med.bardino.app)
 - **Email:** [info@bardino.app](mailto:info@bardino.app)
-- **Support:** [info@bardino.app](mailto:info@bardino.app)
+- **Support:** [support@bardino.app](mailto:support@bardino.app)
 
 ---
 

@@ -78,7 +78,7 @@ node scripts/change-pharmacy-password.js
 **Pilot Eczane:**
 - Eczane ID: `PILOT001`
 - Şifre: `(yayinlanmaz, sifre yoneticisinde)`
-- Email: pilot@dozi.app
+- Email: pilot@bardino.app
 
 ### API Endpoints
 

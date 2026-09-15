@@ -393,7 +393,7 @@ await logUserActivity('WEB_LOGIN', { email: user.email });
 ## 📞 Güvenlik Sorunları
 
 Güvenlik açığı bulursanız:
-- Email: info@bardino.app
+- Email: security@bardino.app
 - Responsible disclosure policy
 - Bug bounty program (yakında)
 
