@@ -9,7 +9,23 @@
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
-        gtag('consent', 'default', {'ad_storage': 'granted','ad_user_data': 'granted','ad_personalization': 'granted','analytics_storage': 'granted'});
+        // Consent Mode v2: izin verilene kadar reddedildi (KVKK/GDPR).
+        gtag('consent', 'default', {
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'wait_for_update': 500
+        });
+        try {
+            var dc = localStorage.getItem('cookie_consent');
+            var dReklam = dc === 'accepted' || dc === 'all';
+            var dAnaliz = dReklam || (dc === 'custom' && localStorage.getItem('analytics_cookies') === 'true');
+            if (dAnaliz) {
+                var dR = dReklam ? 'granted' : 'denied';
+                gtag('consent', 'update', { 'analytics_storage': 'granted', 'ad_storage': dR, 'ad_user_data': dR, 'ad_personalization': dR });
+            }
+        } catch (e) {}
         gtag('js', new Date());
         gtag('config', 'G-FKE1QTSMWJ');
         gtag('config', 'AW-17862936779');

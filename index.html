@@ -20,13 +20,23 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         
-        // Consent Mode v2 - Tüm izinler etkin
+        // Consent Mode v2: izin verilene kadar reddedildi (KVKK/GDPR).
         gtag('consent', 'default', {
-            'ad_storage': 'granted',
-            'ad_user_data': 'granted',
-            'ad_personalization': 'granted',
-            'analytics_storage': 'granted'
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'wait_for_update': 500
         });
+        try {
+            var dc = localStorage.getItem('cookie_consent');
+            var dReklam = dc === 'accepted' || dc === 'all';
+            var dAnaliz = dReklam || (dc === 'custom' && localStorage.getItem('analytics_cookies') === 'true');
+            if (dAnaliz) {
+                var dR = dReklam ? 'granted' : 'denied';
+                gtag('consent', 'update', { 'analytics_storage': 'granted', 'ad_storage': dR, 'ad_user_data': dR, 'ad_personalization': dR });
+            }
+        } catch (e) {}
         
         gtag('js', new Date());
         
@@ -711,28 +721,28 @@
             <div class="science-grid">
                 <div class="science-card">
                     <div class="science-icon">📉</div>
-                    <div class="science-stat"><span class="counter" data-target="50" data-prefix="%" data-suffix="">0</span></div>
+                    <div class="science-stat"><span class="counter" data-target="50" data-prefix="%" data-suffix="">%50</span></div>
                     <h3>Tedaviye Uyumsuzluk</h3>
                     <p>Kronik hastalığı olan hastaların yaklaşık yarısı ilaçlarını düzenli almıyor.</p>
                     <cite>Kaynak: WHO, 2003</cite>
                 </div>
                 <div class="science-card highlight">
                     <div class="science-icon"></div>
-                    <div class="science-stat"><span class="counter" data-target="40" data-prefix="+" data-suffix="%">0</span></div>
+                    <div class="science-stat"><span class="counter" data-target="40" data-prefix="+" data-suffix="%">+40%</span></div>
                     <h3>Uygulama ile İyileşme</h3>
                     <p>Mobil hatırlatma uygulamaları kronik hastalarda ilaç uyumunu önemli ölçüde artırıyor.</p>
                     <cite>Kaynak: JMCP Meta-Analiz, 2020</cite>
                 </div>
                 <div class="science-card">
                     <div class="science-icon">💰</div>
-                    <div class="science-stat"><span class="counter" data-target="300" data-prefix="$" data-suffix="B">0</span></div>
+                    <div class="science-stat"><span class="counter" data-target="300" data-prefix="$" data-suffix="B">$300B</span></div>
                     <h3>Yıllık Maliyet</h3>
                     <p>İlaç uyumsuzluğu ABD sağlık sistemine yılda 300 milyar dolar ek yük getiriyor.</p>
                     <cite>Kaynak: NEHI, 2009</cite>
                 </div>
                 <div class="science-card">
                     <div class="science-icon">📱</div>
-                    <div class="science-stat"><span class="counter" data-target="34" data-prefix="+" data-suffix="%">0</span></div>
+                    <div class="science-stat"><span class="counter" data-target="34" data-prefix="+" data-suffix="%">+34%</span></div>
                     <h3>Uygulama Etkisi</h3>
                     <p>Mobil hatırlatma uygulamaları ilaç uyumunu ortalama %34 artırıyor.</p>
                     <cite>Kaynak: Cochrane Review, 2017</cite>
@@ -750,7 +760,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">💬 Kullanıcı Hikayeleri</span>
-                <h2>Binlerce Kişi<br><span class="gradient-text">Dozi'ye Güveniyor</span></h2>
+                <h2>Kullanıcılar<br><span class="gradient-text">Dozi'yi Anlatıyor</span></h2>
                 <p class="section-desc">Gerçek kullanıcılarımızdan, gerçek hikayeler.</p>
             </div>
             <div class="testimonials-grid">
@@ -1082,6 +1092,7 @@
         function rejectCookies() {
             localStorage.setItem('cookie_consent', 'rejected');
             document.getElementById('cookieBanner').classList.remove('show');
+            gtag('consent', 'update', { 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'analytics_storage': 'denied' });
         }
         checkCookieConsent();
     </script>

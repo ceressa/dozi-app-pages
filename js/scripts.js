@@ -120,6 +120,15 @@ window.addEventListener('scroll', () => {
 // ========================================
 // COOKIE CONSENT BANNER
 // ========================================
+function guncelleRiza(analiz, reklam) {
+    if (typeof gtag !== 'function') return;
+    var r = reklam ? 'granted' : 'denied';
+    gtag('consent', 'update', {
+        'analytics_storage': analiz ? 'granted' : 'denied',
+        'ad_storage': r, 'ad_user_data': r, 'ad_personalization': r
+    });
+}
+
 function checkCookieConsent() {
     const consent = localStorage.getItem('cookie_consent');
     if (!consent) {
@@ -134,7 +143,7 @@ function acceptCookies() {
     localStorage.setItem('analytics_cookies', 'true');
     localStorage.setItem('functional_cookies', 'true');
     document.getElementById('cookieBanner').classList.remove('show');
-    console.log('All cookies accepted');
+    guncelleRiza(true, true);
 }
 
 function rejectCookies() {
@@ -142,7 +151,7 @@ function rejectCookies() {
     localStorage.setItem('analytics_cookies', 'false');
     localStorage.setItem('functional_cookies', 'false');
     document.getElementById('cookieBanner').classList.remove('show');
-    console.log('Only essential cookies accepted');
+    guncelleRiza(false, false);
 }
 
 function showCookieSettings() {
@@ -160,6 +169,7 @@ function saveCookieSettings() {
     localStorage.setItem('cookie_consent', 'custom');
     localStorage.setItem('analytics_cookies', analytics);
     localStorage.setItem('functional_cookies', functional);
+    guncelleRiza(analytics, false);
 
     document.getElementById('cookieBanner').classList.remove('show');
     document.getElementById('cookieModal').classList.remove('show');

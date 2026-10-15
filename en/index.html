@@ -18,13 +18,23 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         
-        // Consent Mode v2 - All granted
+        // Consent Mode v2: izin verilene kadar reddedildi (KVKK/GDPR).
         gtag('consent', 'default', {
-            'ad_storage': 'granted',
-            'ad_user_data': 'granted',
-            'ad_personalization': 'granted',
-            'analytics_storage': 'granted'
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'analytics_storage': 'denied',
+            'wait_for_update': 500
         });
+        try {
+            var dc = localStorage.getItem('cookie_consent');
+            var dReklam = dc === 'accepted' || dc === 'all';
+            var dAnaliz = dReklam || (dc === 'custom' && localStorage.getItem('analytics_cookies') === 'true');
+            if (dAnaliz) {
+                var dR = dReklam ? 'granted' : 'denied';
+                gtag('consent', 'update', { 'analytics_storage': 'granted', 'ad_storage': dR, 'ad_user_data': dR, 'ad_personalization': dR });
+            }
+        } catch (e) {}
         
         gtag('js', new Date());
         
@@ -695,28 +705,28 @@
             <div class="science-grid">
                 <div class="science-card">
                     <div class="science-icon">📉</div>
-                    <div class="science-stat"><span class="counter" data-target="50" data-suffix="%">0</span></div>
+                    <div class="science-stat"><span class="counter" data-target="50" data-suffix="%">50%</span></div>
                     <h3>Non-Adherence Rate</h3>
                     <p>About half of patients with chronic conditions don't take their medications regularly.</p>
                     <cite>Source: WHO, 2003</cite>
                 </div>
                 <div class="science-card highlight">
                     <div class="science-icon"></div>
-                    <div class="science-stat"><span class="counter" data-target="40" data-prefix="+" data-suffix="%">0</span></div>
+                    <div class="science-stat"><span class="counter" data-target="40" data-prefix="+" data-suffix="%">+40%</span></div>
                     <h3>App Improvement</h3>
                     <p>Mobile reminder apps significantly improve medication adherence in chronic patients.</p>
                     <cite>Source: JMCP Meta-Analysis, 2020</cite>
                 </div>
                 <div class="science-card">
                     <div class="science-icon">💰</div>
-                    <div class="science-stat"><span class="counter" data-target="300" data-prefix="$" data-suffix="B">0</span></div>
+                    <div class="science-stat"><span class="counter" data-target="300" data-prefix="$" data-suffix="B">$300B</span></div>
                     <h3>Annual Cost</h3>
                     <p>Medication non-adherence costs the US healthcare system $300 billion annually.</p>
                     <cite>Source: NEHI, 2009</cite>
                 </div>
                 <div class="science-card">
                     <div class="science-icon">📱</div>
-                    <div class="science-stat"><span class="counter" data-target="34" data-prefix="+" data-suffix="%">0</span></div>
+                    <div class="science-stat"><span class="counter" data-target="34" data-prefix="+" data-suffix="%">+34%</span></div>
                     <h3>App Impact</h3>
                     <p>Mobile reminder apps improve medication adherence by an average of 34%.</p>
                     <cite>Source: Cochrane Review, 2017</cite>
@@ -734,7 +744,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">💬 User Stories</span>
-                <h2>Thousands Trust<br><span class="gradient-text">Dozi Every Day</span></h2>
+                <h2>What People Say<br><span class="gradient-text">About Dozi</span></h2>
                 <p class="section-desc">Real stories from real users.</p>
             </div>
             <div class="testimonials-grid">
