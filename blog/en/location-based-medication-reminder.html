@@ -144,7 +144,7 @@
 
         <p class="drop-cap">A clock-based reminder fires at 7:00 PM whether you're at home, stuck in a meeting, or driving. A location-based reminder fires when you actually arrive home — when your medication is actually accessible.</p>
 
-        <p>For millions of people, the barrier to medication adherence isn't forgetting the dose — it's being in the wrong place when the reminder fires. Standard time-based reminders solve the right problem with the wrong tool.</p>
+        <p>For many people the problem is not remembering the dose at all; it is being in the wrong place when the reminder fires. A clock-only reminder answers the right question with the wrong tool.</p>
 
         <h2>The Problem with Time-Only Reminders</h2>
         <p>Here's a scenario most medication users recognize:</p>
@@ -157,9 +157,9 @@
         <p>The reminder did technically fire. But it fired in a context where you couldn't act on it — and by the time you were in the right context, the reminder had long been dismissed.</p>
 
         <h2>Why Context Matters for Memory</h2>
-        <p>Memory researchers have documented the "context-dependency of memory" for decades: we remember things better in the context where we encoded them. A reminder that fires when you're at your desk encodes the "take medication" intention in that context. By the time you're home — a different physical and cognitive context — that intention has weakened or disappeared entirely.</p>
+        <p>Memory research has shown for decades that the setting matters. In a classic 1975 experiment, divers learned word lists either on land or underwater. Lists learned underwater were best recalled underwater, and lists learned on land were best recalled on land (Godden and Baddeley, 1975).</p>
 
-        <p>Location-based reminders solve this by encoding and triggering the intention in the same context where the action will occur: your home.</p>
+        <p>That study was about recalling words, not about medication, but it helps explain the scenario above: an intention formed at your desk ("I'll take it when I get home") has to survive a change of place. A location-based reminder avoids the problem by firing where the action will happen: your home.</p>
 
         <h2>Real-World Use Cases for Location Reminders</h2>
 
@@ -180,17 +180,24 @@
 
         <div class="tip-box">
             <h3>🔒 Privacy Note</h3>
-            <p>Dozi uses location data only to trigger reminders — it is never stored, shared, or used for any other purpose. Location processing happens on your device, not on our servers. Your location stays private.</p>
+            <p>Location is used only when you turn on a location reminder for a medication and grant permission. According to Dozi's GDPR policy, location is processed primarily on your device; the places you save (their names and coordinates) are stored in Firebase Firestore so they sync between your devices. Location data is not sold or shared with third parties for advertising or marketing, and you can withdraw the permission at any time in your phone's settings. Location reminders are part of Dozi Ekstra.</p>
         </div>
 
         <h2>Combining Time and Location Reminders</h2>
-        <p>The most robust adherence system uses both. A time-based reminder provides a safety net; a location-based reminder triggers in the right context. Dozi allows you to configure both for the same medication — ensuring you never find yourself in a situation where the reminder fired at exactly the wrong time.</p>
+        <p>The sturdiest setup uses both: a clock reminder as the safety net, and a location reminder that fires in the place where you can actually act.</p>
 
         <div class="dozi-cta">
             <h2>Set Up Location-Based Reminders in Dozi</h2>
             <p>Reminders that meet you where you are. Not just when the clock says so.</p>
             <a href="https://play.google.com/store/apps/details?id=com.bardino.dozi" class="download-btn">Download Dozi Free</a>
         </div>
+
+        <h2>Sources</h2>
+        <ol style="font-size: 0.95rem; line-height: 1.7; padding-left: 1.25rem; margin-bottom: 1.8rem;">
+            <li>Godden DR, Baddeley AD. Context-dependent memory in two natural environments: on land and underwater. <em>Br J Psychol</em> 1975;66(3):325-331. <a href="https://doi.org/10.1111/j.2044-8295.1975.tb01468.x">doi:10.1111/j.2044-8295.1975.tb01468.x</a></li>
+            <li>Dozi GDPR policy, section 2.4 "Location Data (Premium Feature)". <a href="../../legal/gdpr.html">med.bardino.app/legal/gdpr.html</a></li>
+        </ol>
+        <p style="font-size: 0.9rem; color: #64748b;">This article was updated on 15 October 2026 with the help of AI (Claude); sources were checked on that date.</p>
     </main>
 
     <footer style="background: #020617; color: white; padding: 2rem;">
