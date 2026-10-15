@@ -133,6 +133,7 @@
         .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
         .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-weight: 500; }
         .nav-links a:hover { color: var(--dozi-primary); }
+        .lang-switch { background: rgba(64,224,208,0.15); color: var(--dozi-primary) !important; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem !important; border: 1px solid rgba(64,224,208,0.3); }
         .hero-section { background: var(--gradient-hero); color: white; padding: 8rem 2rem 7rem; text-align: center; position: relative; overflow: hidden; }
         .hero-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2340E0D0' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
         .hero-content { position: relative; z-index: 1; }
@@ -189,6 +190,7 @@
                 <li><a href="../#features">Özellikler</a></li>
                 <li><a href="../#pricing">Fiyatlar</a></li>
                 <li><a href="./">Blog</a></li>
+                <li><a href="en/remote-caregiver-guide.html" class="lang-switch">🇬🇧 English</a></li>
             </ul>
         </div>
     </nav>
@@ -227,7 +229,7 @@
         <p>Görüşmede sorulabilecekler: ilaçların saatleri, hangilerinin aç ya da tok alınacağı, bir doz kaçarsa ne yapılacağı ve hangi belirtide hekime haber verileceği. Kaçırılan doz konusunun genel çerçevesini <a href="ilac-dozunu-kacirdim.html">ayrı bir yazıda</a> anlattık.</p>
 
         <h2>Uzaktan hatırlatma seçenekleri</h2>
-        <p>NHS, ilaçlarını sık unutan biri için birkaç yol sayıyor: ilaç saatinde telefonla arayıp hatırlatmak, akıllı telefon uygulamaları, saati gelince uyarı sesi veren otomatik ilaç dağıtıcıları ve bakım ziyaretlerini ilaç saatlerine denk getirmek.<sup class="ref"><a href="#k2">[2]</a></sup> Haftalık ilaç kutuları da sık kullanılıyor ama NHS her ilaç türüne uygun olmadıklarını yazıyor;<sup class="ref"><a href="#k2">[2]</a></sup> NICE de bu tür doz düzenleyici sistemlerin ancak bir sağlık profesyonelinin, örneğin bir eczacının değerlendirmesinden sonra kullanılmasını öneriyor.<sup class="ref"><a href="#k1">[1]</a></sup></p>
+        <p>NHS, ilaçlarını sık unutan biri için şunları öneriyor: ilaç saatinde telefonla arayıp hatırlatmak, bakım çalışanlarının ziyaretlerini ilaç saatlerine denk getirmek ve saati gelince sesli uyarı veren otomatik bir ilaç dağıtıcısı edinmek. Aynı sayfa başka bir bölümde otomatik dağıtıcılar, özel etiketli paketler ve akıllı telefon uygulamaları gibi başka ilaç hatırlatıcılarının da bulunduğunu yazıyor ve bunlar için eczacıya danışmayı öneriyor.<sup class="ref"><a href="#k2">[2]</a></sup> Haftalık ilaç kutuları da sık kullanılıyor ama NHS her ilaç türüne uygun olmadıklarını yazıyor;<sup class="ref"><a href="#k2">[2]</a></sup> NICE de bu tür doz düzenleyici sistemlerin ancak bir sağlık profesyonelinin, örneğin bir eczacının değerlendirmesinden sonra kullanılmasını öneriyor.<sup class="ref"><a href="#k1">[1]</a></sup></p>
         <div class="warning-box">
             <h3>Annenizle paylaşmanız gereken iki kural</h3>
             <ul>
@@ -240,16 +242,16 @@
         <p>Bu bölümdeki bilgiler sitenin kendi sayfalarından (<a href="../sss.html">SSS</a> ve <a href="../#features">ana sayfa</a>). Orada yazmayan bir ayrıntıyı burada da yazmıyoruz.</p>
         <ol>
             <li><strong>Telefon.</strong> Dozi şu an Android cihazlarda kullanılabiliyor ve Google Play'den indiriliyor; site iOS sürümü üzerinde çalışmaların sürdüğünü söylüyor. Badi olarak takip eden kişi de aynı Dozi uygulamasını kullanıyor. Uygulama yalnız Android'de olduğundan bu, sizin telefonunuz için de geçerli.</li>
-            <li><strong>İlaçlar.</strong> Annenizin telefonuna ilaçları eklersiniz; her biri için ayrı hatırlatma saati, doz bilgisi ve stok takibi ayarlanabiliyor. Dozi Ekstra'da ilaç kutusunu kameraya göstererek ekleme seçeneği de var. Eklenen bilgiyi reçeteyle karşılaştırın.</li>
+            <li><strong>İlaçlar.</strong> Annenizin telefonuna ilaçları eklersiniz; her biri için ayrı hatırlatma saati ve doz bilgisi ayarlanabiliyor. Stok takibi ve ilaç kutusunu kameraya göstererek ekleme Dozi Ekstra'da. Eklenen bilgiyi reçeteyle karşılaştırın.</li>
             <li><strong>Badi bağlantısı.</strong> Bağlantı, uygulama içinde oluşturulan bir davet koduyla kuruluyor.</li>
             <li><strong>Ne görürsünüz?</strong> Badiler, takip ettikleri ilaçların adını, saatini ve alınıp alınmadığını görüyor. İlaç belirlenen sürede alınmazsa badilere otomatik bildirim gidiyor.</li>
             <li><strong>Kardeşler.</strong> Birden fazla kişi Badi olabiliyor; herkes güncel durumu aynı anda görebiliyor.</li>
             <li><strong>İnternet.</strong> Hatırlatmalar internet olmadan çalışıyor, ama Badi senkronizasyonu internet bağlantısı gerektiriyor. Annenizin telefonunda mobil veri ya da Wi-Fi açık olmalı.</li>
-            <li><strong>Stok.</strong> İlaç eklenirken kutudaki tablet sayısı girilirse Dozi her alınan dozu sayıyor ve stok azaldığında uyarıyor.</li>
+            <li><strong>Stok (Dozi Ekstra).</strong> İlaç eklenirken kutudaki tablet sayısı girilirse Dozi her alınan dozu sayıyor ve stok azaldığında uyarıyor.</li>
         </ol>
 
         <h3>Hangi plan?</h3>
-        <p>SSS sayfası temel Badi özelliklerinin ücretsiz olduğunu söylüyor. Ana sayfadaki fiyat tablosunda ise "Sevdiklerinin ilaç takibini yap" satırı Dozi Ekstra'nın altında yer alıyor; Aile Planı da 4 kişiye kadar Ekstra hesabı ve aile üyelerini ayrı ayrı takip etme olarak tanımlanıyor (<a href="../#pricing">Fiyatlar</a>). Hangi Badi özelliğinin hangi planda olduğunu kurulumdan önce uygulamadaki plan ekranından kontrol edin. Ekstra ve Aile Planı yıllık abonelik; site aboneliğin Google Play üzerinden istenildiği zaman iptal edilebildiğini yazıyor.</p>
+        <p>Ücretsiz planda en fazla 3 kişi Badi olarak eklenebiliyor; Dozi Ekstra'da bu sınır 10 kişi (<a href="../sss.html">SSS</a>). Aile Planı 4 kişiye kadar Ekstra hesabını kapsıyor ve aile üyelerini ayrı ayrı takip etmeyi sağlıyor (<a href="../#pricing">Fiyatlar</a>). Ekstra ve Aile Planı yıllık abonelik; site aboneliğin Google Play üzerinden istenildiği zaman iptal edilebildiğini yazıyor.</p>
 
         <h2>Bildirim geldiğinde</h2>
         <p>"Doz alınmadı" bildirimi geldiğinde ne yapılacağını önceden konuşursanız o an karar vermek zorunda kalmazsınız. Şunları baştan kararlaştırın:</p>
@@ -257,7 +259,7 @@
             <li>Bildirim gelince kim arayacak? Birden fazla Badi varsa iş bölümü yapın.</li>
             <li>Kaçırılan dozda ne yapılacağını annenizin ilacının kullanma talimatı ve eczacısı söyler. Telefonda bunu birlikte kontrol edebilirsiniz.</li>
             <li>Annenize ulaşamıyorsanız kime haber vereceksiniz: bir komşu, yakında oturan bir akraba?</li>
-            <li>Annenizin durumu sizi endişelendiriyorsa 112'yi aramaktan çekinmeyin.</li>
+            <li>Annenizin durumu sizi endişelendiriyorsa acil durum numarasını aramaktan çekinmeyin.</li>
         </ul>
         <p>Dozi, annenizin dozu onaylayıp onaylamadığını gösterir. İlacı doğru alıp almadığını ya da kendini nasıl hissettiğini göstermez. Telefon görüşmesinin yerini tutmaz; aradığınızda ne soracağınızı bilmenizi sağlar.</p>
 

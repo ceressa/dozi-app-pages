@@ -133,6 +133,7 @@
         .nav-links { display: flex; gap: 2rem; list-style: none; align-items: center; }
         .nav-links a { color: rgba(255,255,255,0.8); text-decoration: none; font-weight: 500; }
         .nav-links a:hover { color: var(--dozi-primary); }
+        .lang-switch { background: rgba(64,224,208,0.15); color: var(--dozi-primary) !important; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem !important; border: 1px solid rgba(64,224,208,0.3); }
         .hero-section { background: var(--gradient-hero); color: white; padding: 8rem 2rem 7rem; text-align: center; position: relative; overflow: hidden; }
         .hero-section::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2340E0D0' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
         .hero-content { position: relative; z-index: 1; }
@@ -189,6 +190,7 @@
                 <li><a href="../#features">Özellikler</a></li>
                 <li><a href="../#pricing">Fiyatlar</a></li>
                 <li><a href="./">Blog</a></li>
+                <li><a href="en/missed-dose-what-to-do.html" class="lang-switch">🇬🇧 English</a></li>
             </ul>
         </div>
     </nav>
@@ -251,7 +253,7 @@
 
         <h2>Yanlışlıkla fazla aldıysanız</h2>
         <p>Talimatın "kullanmanız gerekenden daha fazla kullandıysanız" bölümünü okuyun. İncelediğimiz iki talimat da bu durumda bir doktor ya da eczacıyla konuşulmasını istiyor.<sup class="ref"><a href="#k2">[2]</a><a href="#k3">[3]</a></sup></p>
-        <p>Türkiye'de Sağlık Bakanlığı'na bağlı Ulusal Zehir Danışma Merkezi (UZEM), zehir ve zehirlenmeler konusunda hekimlere, sağlık çalışanlarına ve vatandaşlara 114 numaralı hattan 7 gün 24 saat danışmanlık veriyor.<sup class="ref"><a href="#k7">[7]</a></sup> Ararken ilacın kutusunu yanınıza alırsanız adını ve dozunu doğru söylemeniz kolaylaşır. Fenalaşan biri varsa 112'yi arayın.</p>
+        <p>Türkiye'de Sağlık Bakanlığı'na bağlı Ulusal Zehir Danışma Merkezi (UZEM), zehir ve zehirlenmeler konusunda hekimlere, sağlık çalışanlarına ve vatandaşlara 114 numaralı hattan 7 gün 24 saat danışmanlık veriyor.<sup class="ref"><a href="#k7">[7]</a></sup> Ararken ilacın kutusunu yanınıza alırsanız adını ve dozunu doğru söylemeniz kolaylaşır. Fenalaşan biri varsa acil durum numarasını arayın.</p>
 
         <h2>Eczacıya ya da hekime ne söyleyeceksiniz?</h2>
         <p>TİTCK'nin İyi Eczacılık Uygulamaları Kılavuzu, eczacının hastayı ve ilaç tedavisini uygulayan kişiyi ilacın dozu, doz zamanları, doz sırasında kaçınılması gereken gıda ve diğer ilaçlar gibi konularda bilgilendirmesini, bilgi verirken de hastanın kullandığı ilaçları sormasını öngörüyor.<sup class="ref"><a href="#k8">[8]</a></sup> Kısa ve doğru bir cevap almak için şunları hazır edin:</p>
@@ -267,8 +269,8 @@
         <p>Kaçırılan doz için doğru adımı talimat ve sağlık profesyoneli söyler. Sizin elinizde olan, kaçırmanın kendisini azaltmak. Onaylı talimatlar da bunu yazıyor: incelediğimiz baş dönmesi ilacının talimatı, tabletleri her gün aynı saatte almanın ilacı hatırlamaya da yardımcı olacağını belirtiyor.<sup class="ref"><a href="#k2">[2]</a></sup></p>
         <ul>
             <li>İlacı her gün yaptığınız bir işe bağlayın. Nasıl yapılacağını <a href="sabah-rutini-ilac-uyumu.html">sabah rutini yazımızda</a> anlattık.</li>
-            <li>Günleriniz düzensizse saat yerine yer tetikleyicisi işe yarayabilir: <a href="konum-bazli-hatirlat-eve-gelince.html">konum bazlı hatırlatma</a>.</li>
-            <li>İlacın bitmesi de bir kaçırma nedeni. <a href="ilac-stoku-takibi-neden-onemli.html">Stok takibi</a> ile kutu bitmeden eczaneye gidin.</li>
+            <li>Günleriniz düzensizse saat yerine yer tetikleyicisi işe yarayabilir: <a href="konum-bazli-hatirlat-eve-gelince.html">konum bazlı hatırlatma</a> (Dozi Ekstra özelliği).</li>
+            <li>İlacın bitmesi de bir kaçırma nedeni. <a href="ilac-stoku-takibi-neden-onemli.html">Stok takibi</a> (o da Dozi Ekstra'da) ile kutu bitmeden eczaneye gidin.</li>
             <li>Birden fazla ilaç kullanıyorsanız saatleri kendi başınıza değil, eczacınızla düzenleyin: <a href="coklu-ilac-takibi-polifarmasi.html">çoklu ilaç takibi rehberi</a>.</li>
         </ul>
         <p>Dozi bu kısımda yardımcı olabilir. Her ilaç için ayrı hatırlatma saati kurarsınız ve ilacı aldığınızda uygulamada onaylarsınız. Hatırlatmayı kaçırırsanız Dozi belirli aralıklarla yeniden bildirim gönderir (<a href="../sss.html">SSS</a>). İstatistik ekranı uyumunuzu grafiklerle gösterir; Badi olarak eklediğiniz bir yakınınıza, ilaç belirlenen sürede alınmadığında bildirim gider (<a href="../#features">özellikler</a>).</p>
