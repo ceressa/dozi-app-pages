@@ -280,33 +280,93 @@
         <priority>0.8</priority>
     </url>
 
-    <!-- Blog Yazıları - yalnız TR -->
+    <!-- Blog Yazıları - TR/EN çiftleri, 15.10.2026 -->
     <url>
         <loc>https://med.bardino.app/blog/ilac-dozunu-kacirdim.html</loc>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://med.bardino.app/blog/ilac-dozunu-kacirdim.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://med.bardino.app/blog/en/missed-dose-what-to-do.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://med.bardino.app/blog/ilac-dozunu-kacirdim.html"/>
+        <lastmod>2026-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://med.bardino.app/blog/en/missed-dose-what-to-do.html</loc>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://med.bardino.app/blog/ilac-dozunu-kacirdim.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://med.bardino.app/blog/en/missed-dose-what-to-do.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://med.bardino.app/blog/ilac-dozunu-kacirdim.html"/>
         <lastmod>2026-10-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://med.bardino.app/blog/tansiyon-ilaci-takibi.html</loc>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://med.bardino.app/blog/tansiyon-ilaci-takibi.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://med.bardino.app/blog/en/blood-pressure-medication-tracking.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://med.bardino.app/blog/tansiyon-ilaci-takibi.html"/>
+        <lastmod>2026-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://med.bardino.app/blog/en/blood-pressure-medication-tracking.html</loc>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://med.bardino.app/blog/tansiyon-ilaci-takibi.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://med.bardino.app/blog/en/blood-pressure-medication-tracking.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://med.bardino.app/blog/tansiyon-ilaci-takibi.html"/>
         <lastmod>2026-10-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://med.bardino.app/blog/coklu-ilac-takibi-polifarmasi.html</loc>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://med.bardino.app/blog/coklu-ilac-takibi-polifarmasi.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://med.bardino.app/blog/en/multiple-medications-polypharmacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://med.bardino.app/blog/coklu-ilac-takibi-polifarmasi.html"/>
+        <lastmod>2026-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://med.bardino.app/blog/en/multiple-medications-polypharmacy.html</loc>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://med.bardino.app/blog/coklu-ilac-takibi-polifarmasi.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://med.bardino.app/blog/en/multiple-medications-polypharmacy.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://med.bardino.app/blog/coklu-ilac-takibi-polifarmasi.html"/>
         <lastmod>2026-10-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://med.bardino.app/blog/tiroid-ilaci-ne-zaman-alinir.html</loc>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://med.bardino.app/blog/tiroid-ilaci-ne-zaman-alinir.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://med.bardino.app/blog/en/when-to-take-thyroid-medication.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://med.bardino.app/blog/tiroid-ilaci-ne-zaman-alinir.html"/>
+        <lastmod>2026-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://med.bardino.app/blog/en/when-to-take-thyroid-medication.html</loc>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://med.bardino.app/blog/tiroid-ilaci-ne-zaman-alinir.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://med.bardino.app/blog/en/when-to-take-thyroid-medication.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://med.bardino.app/blog/tiroid-ilaci-ne-zaman-alinir.html"/>
         <lastmod>2026-10-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://med.bardino.app/blog/uzaktan-bakim-veren-rehberi.html</loc>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://med.bardino.app/blog/uzaktan-bakim-veren-rehberi.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://med.bardino.app/blog/en/remote-caregiver-guide.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://med.bardino.app/blog/uzaktan-bakim-veren-rehberi.html"/>
+        <lastmod>2026-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://med.bardino.app/blog/en/remote-caregiver-guide.html</loc>
+        <xhtml:link rel="alternate" hreflang="tr" href="https://med.bardino.app/blog/uzaktan-bakim-veren-rehberi.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://med.bardino.app/blog/en/remote-caregiver-guide.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://med.bardino.app/blog/uzaktan-bakim-veren-rehberi.html"/>
         <lastmod>2026-10-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
